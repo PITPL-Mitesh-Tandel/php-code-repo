@@ -6,7 +6,13 @@
     <title>Form Builder</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./bundle.min.js"></script>
+    <div id="bookingWidget"></div>
+    <script type="text/javascript" src="./dinetime-booking.min.js"></script>
+    <script type="text/javascript">
+      const config = {
+        key: 'testing'
+      };
+      DineTimeBooking.init('#bookingWidget', config);
+    </script>
   </body>
 </html>

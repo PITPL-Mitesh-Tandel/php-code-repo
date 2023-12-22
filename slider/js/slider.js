@@ -81,6 +81,7 @@
 	class Navigation {
 		constructor(el, settings) {
 			this.DOM = { el: el };
+			this.isPressed = false;
 
 			this.settings = {
 				next: () => {
@@ -92,6 +93,7 @@
 			};
 			Object.assign(this.settings, settings);
 
+			this.container = document.querySelector(".slideshow");
 			// Navigation controls (prev and next)
 			this.DOM.prevCtrl = this.DOM.el.querySelector(".boxnav__item--prev");
 			this.DOM.nextCtrl = this.DOM.el.querySelector(".boxnav__item--next");
@@ -126,8 +128,26 @@
 		}
 
 		initEvents() {
+			var oldx = 0;
 			this.DOM.prevCtrl.addEventListener("click", () => this.settings.prev());
 			this.DOM.nextCtrl.addEventListener("click", () => this.settings.next());
+			this.container.addEventListener("mousedown", (e) => {
+				this.isPressed = true;
+			});
+			this.container.addEventListener("mouseup", (e) => {
+				this.isPressed = false;
+				oldx = 0;
+			});
+			this.container.addEventListener("mousemove", (e) => {
+				if (!this.isPressed) return;
+				if (e.pageX < oldx) {
+					this.settings.prev()
+				} else if (e.pageX > oldx) {
+					this.settings.next()
+				}
+				this.isPressed = false;
+				oldx = e.pageX;
+			});
 		}
 	}
 

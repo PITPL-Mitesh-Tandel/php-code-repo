@@ -1,0 +1,24 @@
+{
+	"name": "pseudocode/pdf-reader",
+    "description": "Read PDF file and extract content to save in database",
+    "license": "GPU",
+    "keywords": ["pseudocode", "extract", "pdf", "reader", "database"],
+    "authors": [
+        {
+            "name": "Mitesh Tandel",
+            "email": "mits.tandel@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "Lib/helpers.php"
+        ],
+        "psr-4": {
+            "Pseudocode\\PDFReader\\": "."
+        }
+    },
+    "require": {
+		"vlucas/phpdotenv": "^5.5",
+		"smalot/pdfparser": "^2.7"
+	}
+}
