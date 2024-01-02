@@ -32,8 +32,30 @@ class PageController extends Controller
     $pdf = $parser->parseFile($file);
     
     // Extract text from PDF
-    $textContent = nl2br($pdf->getText());
+    $text = $pdf->getText();
 
-    die($textContent);
+    // $textArray = explode("\n", $text); pr($textArray, false);
+
+    // foreach($textArray as $text) {
+    //   if ($this->stringDateToday($text)) {
+    //     echo 'Date Found';
+    //   }
+    // }
+
+    var_dump($this->stringDateToday("Times of India	, 09/08/13"));
+  }
+
+  private function stringDateToday($string) {
+    $reg = "/([0-9]?[0-9])[\.\-\/ ]+([0-1]?[0-9])[\.\-\/ ]+([0-9]{2,4})/";
+
+    $date = new \DateTime();
+
+    preg_match($reg, $string, $matches); pr($matches, false);
+
+    if (isset($matches[0])) {
+        return $matches[0] == $date->format("d/m/y");
+    }
+
+    return false;
   }
 }
