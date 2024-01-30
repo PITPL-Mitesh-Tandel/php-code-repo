@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address Search</title>
+  <!-- Add the Google Places API script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4p6Bs5s5evYfmQLbg8XaoD3bexCCN-6Q&libraries=places&v=weekly"></script>
+</head>
+<body>
+ 
+  <h1>Address Search</h1>
+ 
+  <label for="address">Enter Address:</label>
+  <input type="text" id="address" placeholder="Type to search for an address">
+ 
+  <!-- Display the auto-suggested addresses in a dropdown -->
+  <div id="addressDropdown"></div>
+ 
+  <button id="addButton" disabled>Add</button>
+ 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize the Places API autocomplete
+      const input = document.getElementById('address');
+      const addButton = document.getElementById('addButton');
+      const autocomplete = new google.maps.places.Autocomplete(input);
+      let selectedPlace = null;
+ 
+      // Add event listener to enable/disable the "Add" button based on selection
+      autocomplete.addListener('place_changed', function() {
+        const place = autocomplete.getPlace();
+        selectedPlace = place.formatted_address;
+ 
+        // Enable the "Add" button only if a place is selected and has a place_id
+        addButton.disabled = !place || !place.place_id;
+      });
+ 
+      // Add event listener for input changes to handle clearing the field
+      input.addEventListener('input', function() {
+        const place = autocomplete.getPlace();
+        // Disable the "Add" button if the address field is empty
+        console.log(place);
+        addButton.disabled = (input.value.trim() != selectedPlace);
+      });
+    });
+  </script>
+ 
+</body>
+</html>

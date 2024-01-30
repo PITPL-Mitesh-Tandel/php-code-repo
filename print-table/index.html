@@ -5,15 +5,13 @@
       @media print {
         table {
           border-collapse: collapse;
-          border: 1px solid #000;
         }
-        thead {
-          display: table-header-group;
+        table > tbody > tr {
+          page-break-inside: avoid;
         }
-        td, th {
-          border: 1px solid #000;
+        table > tbody > tr > td {
+          border: 1px solid black;
         }
-        @page { margin-bottom: 100px }
       }
     </style>
   </head>
