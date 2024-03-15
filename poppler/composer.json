@@ -1,0 +1,20 @@
+{
+	"name": "pseudocode/poppler-pdf-reader",
+    "description": "Read PDF file and extract content to save in database",
+    "license": "GPU",
+    "keywords": ["pseudocode", "extract", "pdf", "reader", "database", "poppler"],
+    "authors": [
+        {
+            "name": "Mitesh Tandel",
+            "email": "mits.tandel@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pseudocode\\PopplerPDFReader\\": "."
+        }
+    },
+    "require": {
+		"vlucas/phpdotenv": "^5.5"
+	}
+}
