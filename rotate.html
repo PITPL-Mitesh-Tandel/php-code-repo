@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    #container { margin: 0%; }
+
+    #circle { width: 200px; }
+
+    #circle text { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase;  }
+
+    #circle svg { position: absolute; left: 0; top: 0; width: 100%;
+
+      -webkit-animation-name: rotate;
+        -moz-animation-name: rotate;
+          -ms-animation-name: rotate;
+          -o-animation-name: rotate;
+              animation-name: rotate;
+      -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+          -ms-animation-duration: 5s;
+          -o-animation-duration: 5s;
+              animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+          -ms-animation-iteration-count: infinite;
+          -o-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+          -ms-animation-timing-function: linear;
+          -o-animation-timing-function: linear;
+              animation-timing-function: linear;
+
+    }
+
+    @-webkit-keyframes rotate {
+        from { -webkit-transform: rotate(0); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @-moz-keyframes rotate {
+      from { -webkit-transform: rotate(0); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @-ms-keyframes rotate {
+      from { -webkit-transform: rotate(0); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @-o-keyframes rotate {
+      from { -webkit-transform: rotate(0); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes rotate {
+      from { -webkit-transform: rotate(0); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="circle">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+        <defs>
+            <path id="circlePath" d="M 100, 100 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+        </defs>
+        <circle cx="100" cy="100" r="95" fill="#ff0"/>
+        <g>
+            <use xlink:href="#circlePath" fill="none"/>
+            <text fill="#000">
+                <textPath xlink:href="#circlePath">Contact Us &nbsp; &nbsp; Contact Us</textPath>
+            </text>
+        </g>
+    </svg>
+    </div>
+    </div>
+    
+</body>
+</html>
