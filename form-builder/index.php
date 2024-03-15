@@ -10,7 +10,7 @@
     <script type="text/javascript" src="./dinetime-booking.min.js"></script>
     <script type="text/javascript">
       const config = {
-        key: 'testing'
+        key: 'proof-pizzeria'
       };
       DineTimeBooking.init('#bookingWidget', config);
     </script>
