@@ -1,0 +1,27 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0" bgcolor="#e6e7e9">
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" width="620" border="0" align="center">
+<tr><td style="padding-bottom:20px; padding-top:30px;"><a href="{site_url}"><img src="{site_url}images/logo-white.png" alt="" width="210" border="0"></a></td></tr>
+<tr>
+  <td style="font-family:Open Sans,Arial, Helvetica, sans-serif; font-size:20px; color:#fff; text-align:right; background:#212121; padding:0px 10px 3px 10px;">New Contact ({enquiry_name})</td></tr>
+<tr><td style="background:#fff; padding:20px 15px; font-family:Open Sans,Arial, Helvetica, sans-serif; font-size:14px; color:#666666;">
+<p>Dear {fullname},</p>
+<p>New service enquiry received at {site_title}.<br />
+  Following are the enquiry details,<br />
+<strong>Name:</strong> {enquiry_name}<br />
+<strong>Email Address:</strong> {enquiry_email}<br />
+<strong>Phone:</strong> {enquiry_phone}<br />
+<strong>Service:</strong> {enquiry_service}<br />
+<strong>Date:</strong> {enquiry_date}<br />
+<strong>Time:</strong> {enquiry_time}<br />
+<strong>Message:</strong> {enquiry_message}</p>
+<p>Sincerely,<br />
+{site_title} Technical Team<br />
+<a href="{site_url}">{site_url}</a></p></td></tr>
+<tr>
+  <td style="font-family:Open Sans,Arial, Helvetica, sans-serif; font-size:12px; color:#9c9ea1; padding-top:15px; padding-bottom:30px;">&copy; All Rights Reserved | <a href="{site_url}">{site_title}</a>.</td></tr>
+</table>
+</td>
+</tr>
+</table>
