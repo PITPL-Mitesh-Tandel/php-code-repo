@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Grid Container</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Defines 4 equal columns */
+            justify-items: center; /* Centers items horizontally within the grid */
+            align-items: center; /* Centers items vertically within the grid */
+            height: 100vh; /* Optional: to make the grid container fill the viewport height */
+        }
+
+        .grid-item {
+            grid-column: span 2; /* Span across 2 columns */
+            width: 100%; /* Ensures it takes the full width of the spanned columns */
+            background-color: lightblue; /* Example background color */
+            text-align: center; /* Center text inside the grid item */
+            padding: 20px; /* Example padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Container</div>
+    </div>
+</body>
+</html>
