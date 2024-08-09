@@ -140,21 +140,22 @@
                     const fullName = nameDetails.FirstName.content + ' ' + nameDetails.LastName.content;
                     $('#form-field-name').val(fullName);
 
-                    const companyName = parseData(CompanyNames.valueArray);
+                    const companyName = CompanyNames ? parseData(CompanyNames.valueArray) : '';
                     $('#form-field-field_7cfee85').val(companyName);
 
-                    const jobTitle = parseData(JobTitles.valueArray);
+                    const jobTitle = JobTitles ? parseData(JobTitles.valueArray) : '';
                     $('#form-field-field_efd03d5').val(jobTitle);
 
-                    const website = parseData(Websites.valueArray);
+                    const website = Websites ? parseData(Websites.valueArray) : '';
                     $('#form-field-field_fde0f34').val(website);
 
-                    const email = parseData(Emails.valueArray);
+                    const email = Emails ? parseData(Emails.valueArray) : '';
                     $('#form-field-email').val(email);
 
-                    const phone = parseData(MobilePhones.valueArray);
+                    const phone = MobilePhones ? parseData(MobilePhones.valueArray) : '';
                     const filteredPhone = phone.replace(/[^0-9-*#]/gi, "");
                     $('#form-field-field_282c818').val(filteredPhone);
+                    
                     $('#messageBox').attr('style', 'color: green;').html('Your request is successful.');
                   } else {
                     $('#messageBox').html('Your request has been failed. Please try again.');
