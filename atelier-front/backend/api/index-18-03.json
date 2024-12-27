@@ -1,0 +1,266 @@
+  [
+    {
+      "type": null,
+      "order": 0,
+      "data": {
+        "id": 888,
+        "published": true,
+        "template": "video",
+        "title": "",
+        "subtitle": "We are state of the Art lighting design professionals.",
+        "client": null,
+        "location": "",
+        "content": "",
+        "background": {
+          "src": null,
+          "alt": null
+        },
+        "image": "http://www.atelierdada.com/assets/frontend/images/new-vid-poster.jpg",
+        "video":"",
+        "color": null,
+        "linkResource": "",
+        "tags": null
+      }
+    },
+    {
+      "type": "work",
+      "order": 1,
+      "data": 
+      {
+        "id": 1,
+        "published": true,
+        "template": "hero-image",
+        "title": "FIAT LUX",
+        "subtitle": "With smart, state of the art and cutting edge lighting design solutions.",
+        "client": null,
+        "location": "",
+        "content": "",
+        "background": 
+        {
+          "src": "",
+          "alt": null
+        },
+        "image": "http://www.atelierdada.com/images/Mondeal_IDA.jpg",
+        "color": null,
+        "linkResource": "mondeal-square-facade",
+        "tags": null
+      }
+    },
+    {
+      "type": "work",
+      "order": 2,
+     
+      "data": 
+      {
+        "id": 1081,
+        "sub_type":"WORK",
+        "published": true,
+        "template": "article",
+        "teaser":"Under Spot Light",
+        "title": "The Mango Tree House",
+        "subtitle": "Residential",
+        "client": "",
+        "location": "London",
+        "content": "",
+        "background": 
+        {
+          "src": "http://www.atelierdada.com/images/ujjvalpanchaldesignboom02.jpg",
+          "alt": ""
+        },
+        "image": null,
+        "color": "",
+        "linkResource": "the-mango-tree-house-landscape",
+        "tags": "Residential"
+      }
+    },
+    
+    {
+      "type": "grid",
+      "order": 3,
+      "data": {
+        "template": "grid-6",
+         "grid1": {
+          "type": "news",
+          
+          "data": {
+            "id": 144,
+            "published": true,
+            "sub_type":"News",
+            "template": "article",
+            "title": "Dandi Kutir",
+            "subtitle": "Vibrant Gujarat Global Summit 2017",
+            "client": "",
+            "location": "Mahatma Mandir, Gandhinagar",
+            "content": "",
+            "link": "",
+            "linkResource":"",
+            "background": {
+              "src": "http://www.atelierdada.com/atelier/file-manager/content/0197819140039548_1488866809_68981.jpg",
+              "alt": ""
+            },
+            "image": "http://www.atelierdada.com/atelier/file-manager/content/0197819140039548_1488866809_68981.jpg",
+            "color": "",
+            "title-slug":"dandi-kutir",
+            "permalink":"",
+            "tags": "Jan 2017"
+          }
+        },
+          "grid2": {
+          "type": "news",
+          
+          "data": {
+            "id": 144,
+            "published": true,
+            "sub_type":"Mock-up",
+            "template": "article",
+            "title": "Mondeal HTS",
+            "subtitle": "The mixed-use commercial twin towers are shaping.",
+            "client": "",
+            "location": "Ahmedabad, India",
+            "content": "",
+            "link": "",
+            "title-slug":"mondeal-hts-mockup",
+            "background": {
+              "src": "http://www.atelierdada.com/atelier/file-manager/content/7811630055032678_1486139113_60607.jpg",
+              "alt": ""
+            },
+            "image": "http://www.atelierdada.com/atelier/file-manager/content/7811630055032678_1486139113_60607.jpg",
+            "color": "",
+          
+            "permalink":"",
+            "tags": "Dec 2016"
+          }
+        },
+        
+         "grid3": {
+          "type": "news",
+
+          "data": {
+            "id": 144,
+            "published": true,
+            "sub_type":"Inaugurated ",
+            "template": "article",
+            "title": "Aaron",
+            "subtitle": "Just completed mixed-use commercial tower",
+            "client": "Yash developers",
+            "location": "Ahmedabad, India",
+            "content": "",
+            "linkResource":"aaron-inaugurated",
+            "link": "",
+            "background": {
+              "src": "http://www.atelierdada.com/atelier/file-manager/content/4059713051808050_1485319321_87671.jpg",
+              "alt": ""
+            },
+            "image": "http://www.atelierdada.com/atelier/file-manager/content/4059713051808050_1485319321_87671.jpg",
+            "color": "",
+            "tags": "Dec 2016",
+            "permalink":""
+          }
+        },
+        
+        
+      
+             "grid5": {
+          "type": "news",
+        
+          "data": {
+            "id": 144,
+            "published": true,
+            "sub_type":"Awards",
+            "template": "article",
+            "title": "Mondeal square",
+            "subtitle": "First price @ \"German design Awards\"",
+            "client": "",
+            "location": "Germany",
+            "content": "",
+            "link": "https://issuu.com/mondiale/docs/mondoarc93_issuu/42",
+            "background": {
+              "src": "http://www.atelierdada.com/atelier/file-manager/content/4917421532967434_1484305555_14917.png",
+              "alt": ""
+            },
+            "image": "http://www.atelierdada.com/atelier/file-manager/content/4917421532967434_1484305555_14917.png",
+            "color": "",
+          
+            "permalink":"https://issuu.com/mondiale/docs/mondoarc93_issuu?utm_source=Email+Campaign&utm_medium=email&utm_campaign=29524-176531-Campaign+-+19%2F10%2F2016",
+            "tags": "Oct 2016"
+          }
+        },
+        "grid6": {
+          "type": "news",
+        
+          "data": {
+            "sub_type":"Awards",
+            "id": 36,
+            "published": true,
+            "template": "article",
+            "title": "Sumel 6",
+            "subtitle": "Nominated for \"Best exterior lighting\" @ \"Acetylene Awards\"",
+            "client": "23TH OCT 2014",
+            "location": "London",
+            "content": ">",
+            "background": {
+              "src": "http://www.atelierdada.com/images/media/IMG_8907.jpg",
+              "alt": ""
+            },
+            "image": "http://www.atelierdada.com/images/media/IMG_8907.jpg",
+            "color": "",
+         
+            "link":"https://www.facebook.com/100008371860240/videos/1782193902069655/",
+            "title-slug":"sumel-6-nominee-acetylene-award-news",
+            "tags": "OCT 2016"
+          }
+        },
+        "grid4": {
+          "type": "news",
+          "data": {
+          "sub_type":"Upcoming",
+            "id": 35,
+            "published": true,
+            "template": "article",
+            "title": "Shivalik Shilp1",
+            "subtitle": "Commercial tower in Ahmedabad",
+            "client": "",
+            "location": "Columbus",
+            "content": "",
+            "background": {
+              "src": "http://www.atelierdada.com/atelier/file-manager/content/66550504401322_1477715169_55893.jpg",
+              "alt": ""
+            },
+            "title-slug":"shivalik-shilp-1",
+            "image": null,
+            "color": "",
+            "link":"",
+          
+            "tags": "OCT 2016"
+          }
+        }
+       
+      }
+    },
+     {
+    "type": "news",
+    "order": 4,
+    "data": 
+    {
+      "id": 1,
+      "sub_type":"Awards",
+      "published": true,
+      "template": "article",
+      "title": "",
+      "subtitle": "",
+      "client": null,
+      "location": "",
+      "content": "",
+      "background": 
+      {
+        "src": "http://www.atelierdada.com/images/media/awards-en.jpg",
+        "alt": null
+      },
+      "image": "http://www.atelierdada.com/images/media/awards-en.jpg",
+      "color": null,
+     "title-slug":"",
+     "link":"http://www.atelierdada.com/en/media",
+      "tags": null
+    }
+  }
+  ]

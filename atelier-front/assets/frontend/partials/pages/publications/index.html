@@ -1,0 +1,74 @@
+<div id="news-scroll-container" class="scroll-container" in-view-container>
+    <div id="news-container" ng-if="pc.publications">
+        <div masonry>
+            <div class="column-sizer"></div>
+            <!--
+              We can't use ng-class here because it gets evaluated too late for the image resizing, resulting in overlapping.
+
+              For this reason we use `ng-if` and `ng-include` to reduce repetition.
+            -->
+
+            <div in-view="pc.inView(card)" class="masonry-card masonry-card--featured" ng-repeat-start="card in pc.publications" ng-if="card.featured" ng-include="'news-article.html'" data-sort="{{card.promoted}}">
+            </div>
+
+            <div in-view="pc.inView(card)" class="masonry-card" ng-repeat-end ng-if="!card.featured" ng-include="'news-article.html'" data-sort="{{card.promoted}}">
+            </div>
+        </div>
+    </div>
+
+    <page-footer studios="studios">
+        <map>
+            <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+        </map>
+    </page-footer>
+</div>
+
+<script type="text/ng-template" id="news-article.html">
+    <div class="masonry-card__content-wrapper">
+        <hr class="masonry-card__divider">
+
+        <div class="masonry-card__image-wrapper">
+            <div iu-sizes
+                 iu-width="{{card['background-width']}}"
+                 iu-height="{{card['background-height']}}"
+                 iu-scale-up="true"
+                 iu-spinner
+                 iu-parent-selector=".masonry-card"
+                 iu-template-string='<span class="spinner spinner--overlay"></span>'
+                 ng-if="card['background-width'] && card['background-height']">
+
+                <img class="masonry-card__image"
+                     ng-src="{{card.background}}"
+                     iu-image-element
+                     ng-if="card.visible"/>
+            </div>
+        </div>
+
+        
+        <a class="masonry-card__content-wrapper" href="{{language}}/media/{{card['title-slug']}}" ng-if="card.link=='' && card.content!=''">
+            <h6 class="masonry-card__title">{{card.title}}</h6>
+        </a>
+         <a class="masonry-card__content-wrapper" ng-if="card.link!=''" href="{{card.link}}" >
+            <h6 class="masonry-card__title">{{card.title}}</h6>
+        </a>
+    
+        <a class="masonry-card__content-wrapper" ng-if="card.content=='' && card.link==''" >
+            <h6 class="masonry-card__title">{{card.title}}</h6>
+        </a>
+        
+
+        <!--<img ng-src="{{card.logo}}" class="news-article-logo"/>-->
+
+        <div class="news-article-content">
+            <div ng-bind-html="card.content" content-links-new-tab></div>
+        </div>
+
+        <div class="news-article-date copy-small">{{ card.date | ordinalDate: 'dd/MM/yyyy' }}</div>
+        <div class="news-article-category">
+            <span ng-style="{color: '#FFDF00'}">{{ card.category }}</span>
+            <span ng-if="card.location.length">
+                | {{card.location}}
+            </span>
+        </div>
+    </div>
+</script>

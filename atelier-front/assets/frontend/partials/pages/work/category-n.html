@@ -1,0 +1,60 @@
+<div id="news-scroll-container" class="scroll-container" in-view-container>
+    <div id="news-container" ng-if="nc.news">
+        <div masonry>
+            <div class="column-sizer"></div>
+
+            <!--
+              We can't use ng-class here because it gets evaluated too late for the image resizing, resulting in overlapping.
+
+              For this reason we use `ng-if` and `ng-include` to reduce repetition.
+            -->
+
+            <div in-view="nc.inView(card)" class="masonry-card masonry-card--featured" ng-repeat-start="card in nc.news" ng-if="card.featured" ng-include="'news-article.html'" data-sort="{{card.promoted}}">
+            </div>
+
+            <div in-view="nc.inView(card)" class="masonry-card" ng-repeat-end ng-if="!card.featured" ng-include="'news-article.html'" data-sort="{{card.promoted}}">
+            </div>
+        </div>
+    </div>
+
+    <page-footer studios="studios">
+        <map>
+            <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+        </map>
+    </page-footer>
+</div>
+
+<script type="text/ng-template" id="news-article.html">
+
+    <div class="masonry-card__content-wrapper">
+        <hr class="masonry-card__divider">
+
+        <div class="masonry-card__image-wrapper">
+            <div iu-sizes
+                 iu-width="100"
+                 iu-height="100"
+                 iu-scale-up="true"
+                 iu-spinner
+                 iu-parent-selector=".masonry-card"
+                 iu-template-string='<span class="spinner spinner--overlay"></span>'
+                 >
+
+               
+            </div>
+        </div>
+        <a class="masonry-card__content-wrapper" >
+            <h6 class="masonry-card__title">{{card.teaser}}</h6>
+        </a>
+        <!--<img ng-src="{{card.logo}}" class="news-article-logo"/>-->
+
+        <div class="news-article-content">
+            <div ng-bind-html="card.content" content-links-new-tab></div>
+        </div>
+
+        <div class="news-article-date copy-small"></div>
+        <div class="news-article-category">
+            <span ng-style="{color: '#ef7627'}"></span>
+           
+        </div>
+    </div>
+</script>

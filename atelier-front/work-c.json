@@ -1,0 +1,759 @@
+{
+  "overview": [],
+  "data": [
+    {
+      "id": "50",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "mango-tree-house",
+      "title": "The mango tree house",
+      "client": "Mr Manish Jain",
+      "location": "Bhopal, India",
+      "teaser": "",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/0199147251308953_1476901682_756646.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category11": "Residential",
+     
+      "search-tags": {
+        "facade": "Facade"
+      },
+      "content": [
+        {
+          "id": "215",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>The project site is in suburban area of Bhopal city. Site is nestled in a township with bounty of mango grove. The architecture response poses a sober face to the community housing and opens to a Mango grove with expansive terraces.</p>\r\n\r\n<p>Our lighting design approach is to bridge this inside outside relation with medium of electric light. The site offers carefully crafted vistas from this dynamic house and create several lighting scenarios and atmospheres to be displayed, easily thanks to the automation system, as per client needs.</p>\r\n\r\n<p>Atelier dada planned the master plan for the whole house, but selected only the architectural fittings while the decorative ones were choice of the client and architects. At the trial time, Atelier dada helped with focusing and reorganizing the decorative fittings in the space to respond the best to the design intent.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "216",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/4544185049373017_1476901682_833110.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "216",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/5214214112670179_1476901682_538835.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "51",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "mondeal-square",
+      "title": "Mondeal Square",
+      "client": "",
+      "location": "",
+      "teaser": "Enjoy your breeze",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/0877418437676832_1475221825_191647.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Commercial",
+     
+      "search-tags": {
+        "facade": "Facade",
+        "landscape": "Landscape",
+        "interior": "Interior"
+      },
+      "content": [
+        {
+          "id": "194",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>The project is a twin tower of 10 and 12 storey office buildings with a connecting two storey retail area, conceived by the German architects Blocher&amp;Blocher for HN Safal developers in Ahmedabad, India.</p>\r\n\r\n<p>The brief from client and architect was to realize technically the idea of the architects to integrate static monochrome lights in the fa&ccedil;ade. Atelier dada took this idea further ahead with use of media lines that permit more flexibility at use and are more energy efficient with use of subtle programming.</p>\r\n\r\n<p>The lights have been custom designed to fit the varying length diagonal lines of the sun shades and been fitted with custom designed press fit mounting clamps in screen box sections. The box sections were customized to keep the LED media bars flush with the profile and thus become totally integral during the day. By night, the light offers unobtrusive views for occupants even while lights are on and became an architectural element defining medium and almost a tangible part of the design.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "197",
+          "template": "full-video",
+          "data": {
+            "Video": "85915432",
+            "VideoAutoplay": ""
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "195",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "52",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "trade-square",
+      "title": "Trade Square",
+      "client": "B Safal developers",
+      "location": "Ahmedabad, India",
+      "teaser": "The media clock",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/6441444808654064_1476900829_150731.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Commercial",
+     
+      "search-tags": {
+        "facade": "Facade",
+        "landscape": "Landscape",
+        "interior": "Interior"
+      },
+      "content": [
+        {
+          "id": "199",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>The project, a commercial complex occupying 3 floors and 2 basements, is situated in the eastern Ahmedabad&#39;s old industrial hub Khokhra area, facing to a busy traffic island. The non-stop movement at the traffic island inspired us to express the movement with light. Hence, a dynamic installation immerged as a face of the building with some explorations of connecting the lights with information about time.</p>\r\n\r\n<p>In addition, within a very tight budget, corridors linking the shops entries are enhanced with seamless lights integrated into ceiling and light-Art installations using Fluorescence low tech. An attempt is made to give some rhythm and majesty to the long L shaped building, at ground floor guiding toward the housing complex by same owner and architect, through decorative light fittings inspired from torches.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "204",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/5114292863367034_1476900829_289417.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "204",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/0712031823432104_1476900829_183259.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "266",
+          "template": "full-video",
+          "data": {
+            "Video": "128737401",
+            "VideoAutoplay": ""
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "53",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "volvo-showroom-radiates",
+      "title": "Volvo showroom radiates",
+      "client": "Mr Dhaval Thakker",
+      "location": "Ahmedabad, India",
+      "teaser": "",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/7649387477660438_1478277728_145677.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Retail",
+   
+      "search-tags": {
+        "facade": "Facade",
+        "interior": "Interior"
+      },
+      "content": [
+        {
+          "id": "205",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>The very low budget was challenging us to create an elegant concept for this showroom that is efficient, maintenance friendly while branding.</p>\r\n\r\n<p>For the 100m 2 full glazed fa&ccedil;ade composing the showroom, located between Porshe and Renault showrooms and signed by the German architects Blocher Blocher, a minimalistic linear concept was imagined, inspired by the purity of Scandinavian design, origin of Volvo brand.</p>\r\n\r\n<p>Like sunbeams sneaking inside the showroom from the glass fa&ccedil;ade, the luminous lines guide inward, highlight the cars and components panels on the peripheral walls. From the inside, these lines create a rhythmic that respects the functionality of the premises and manages the networks between what they are recessed. They get reflected on the glazed fa&ccedil;ade, duplicate and so give an illusion of infinity. They refract on cars&#39; shine, adding a sort of strength and vitality, and creating a unique visual identity to the showroom that attracts from far.</p>\r\n\r\n<p>Above the reception desk, a decorative suspension with dynamic light, itself a twisted line, focuses the eye on that space and creates a centrality in the showroom.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "208",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/0393700284954804_1476901288_205218.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "208",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/3381429331928992_1476901288_158222.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "208",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/8979587989294_1476901288_201838.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "54",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "650-restaurant",
+      "title": "650 Restaurant",
+      "client": "Mr. Paresh Patel",
+      "location": "Ahmedabad, India",
+      "teaser": "A cozy ambiance",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/5456735675833412_1476901487_262320.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Commercial",
+  
+      "search-tags": {
+        "interior": "Interior"
+      },
+      "content": [
+        {
+          "id": "211",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>Client wanted to have ethnic look for his upcoming restaurant and wanted to use his collection of local artefacts. Our involvement was much at a later stage where several unwanted light points had been already chiselled into beautiful stone work and in wooden ceilings, making lot of unwanted punctures here and there. However, we succeeded in pursuing the client and architect to reduce the number of lights/ locate them discreetly/ lower the source location in room for cosy ambience and utmost visual comfort. We had also helped achieve custom fittings above the dining tables that reveal the wooden ceiling and at the same time act as accent light for the tables. Or concealed lights for accentuating tables and sculptural niches.</p>\r\n\r\n<p>For outdoor stone pavilions also we had suggested buried lights that discreetly accentuate the building while kept low height glowing bollard along the green alleyway to guide softly the client while keeping focus on the illuminated architectural elements.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "312",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/8386143006642120_1478277475_103890.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "313",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/0971925380774578_1478277475_129683.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "55",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "mango-tree-house-landscape",
+      "title": "Mango tree house - Landscape",
+      "client": "Mr. Manish Jain",
+      "location": "Bhopal, India",
+      "teaser": "",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/8778438282957019_1476902303_724200.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Residential",
+      "content": [
+        {
+          "id": "219",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>The project site is in suburban area of Bhopal city. Site is nestled in a township with bounty of mango grove. The architecture response poses a sober face to the community housing and opens to a Mango grove with expansive terraces.</p>\r\n\r\n<p>Our lighting design approach is to bridge this inside outside relation with medium of electric light. The site offers carefully crafted vistas from this dynamic house and create several lighting scenarios and atmospheres to be displayed, easily thanks to the automation system, as per client needs.</p>\r\n\r\n<p>Atelier dada planned the master plan for the whole house, but selected only the architectural fittings while the decorative ones were choice of the client and architects. At the trial time, Atelier dada helped with focusing and reorganizing the decorative fittings in the space to respond the best to the design intent.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "220",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/9757445693670168_1476902303_530008.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "220",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/7562766625422053_1476902303_363507.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "56",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "sumel-6-aura",
+      "title": "Sumel 6 Aura",
+      "client": "HN SAFAL",
+      "location": "Ahmedabad, India",
+      "teaser": "",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/3417577217765237_1477659924_300293.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Commercial",
+    
+      "search-tags": {
+        "facade": "Facade",
+        "landscape": "Landscape"
+      },
+      "content": [
+        {
+          "id": "223",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>Site is located on the grounds of old mill compound in eastern part of Ahmedabad city. The facility comprises of nearly 1500 small and large retail outlets with G+4 floor high 10 long building blocks forming great perspectives to explore. The area around is challenging, dotted by many unorganized small shops and in a bit dilapidated form. Hence, it was very important to attract the buyers and make owners and tenants proud of their business address. The age old trees dotted around the edge between plot and the main roads were very impressive and potential source of exploration for us. &nbsp;</p>\r\n\r\n<p>Working closely with ADS Architects and Beyond Green Landscape Designers, Atelier dada&rsquo;s proposal aimed to enrich the retail complex by giving it an &lsquo;aura&rsquo;. This was conceptualized as energy that is derived from venerable trees holding guard, which transposes over the inner streets and winds around the sprawling complex. Realized as ethereal rings of light rising from the topiary, traveling along building&rsquo;s crowns and wafting down passages, the &lsquo;aura&rsquo; emanates positive vibes for pedestrians and vehicular movement below. Reflecting on the allegory of &lsquo;Aurora&rsquo;, a fascinating display of naturally colour changing light in the polar skies, the rings and crown are illuminated in a whimsical play of vibrant hues. Media LEDs are programmed to display soft white colours during the week, while weekends and festivals are celebrated in dynamic chromatism. Set to sparkle for one minute at the beginning of every hour, the fascinating show of lights creates a distinct night time identity within the complex, as well as at the larger urban city scale.</p>\r\n\r\n<p>The project include exclusive luminaire design inspired from the genius loci. Indeed, ideas for detailing Aura1, the integrated tree light for example developed from the bikes&rsquo; and street hawkers cars&rsquo; wheels, the main vehicles of the surrounding area, while the catenary light, Aura2, developed from a purification of the same shape.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "262",
+          "template": "full-video",
+          "data": {
+            "Video": "159055245",
+            "VideoAutoplay": ""
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "225",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/6634634106976558_1477659924_272666.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "264",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/0659644273740815_1477745411_231298.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "57",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "solitaire-sparkles",
+      "title": "Solitaire sparkles",
+      "client": "HN SAFAL",
+      "location": "Ahmedabad, India",
+      "teaser": "",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/5472766154637966_1478277085_240162.JPG",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Commercial",
+     
+      "search-tags": {
+        "facade": "Facade",
+        "landscape": "Landscape"
+      },
+      "content": [
+        {
+          "id": "227",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>How to light discreetly but in elegant and meaningful way a corporate tower? The solution chosen by client among the 3 options we proposed was an abstraction of a solitaire diamond reminding the name of the tower created out of a play of light beams that represent the diamond sparkle. These beams align with the triangular shaped service shafts, themselves grazed with linear uplights, create a playful game for the passing by.&nbsp;</p>\r\n\r\n<p>By day, we see only small cubes randomly put on the masonry and we get curious about them. But when the night comes, the magic happened and we get a pleasant surprise!</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "228",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/4034691867274556_1477660195_515753.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "229",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/8980155103930528_1477660195_267239.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "58",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "shivalik-hs-resculpted",
+      "title": "Shivalik HS resculpted",
+      "client": "Shivalik Projects",
+      "location": "Ahmedabad, India",
+      "teaser": "",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/4987221408586167_1477667600_228989.JPG",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Commercial",
+      "tags": "Facade,Landscape,Interior",
+      "search-tags": {
+        "facade": "Facade",
+        "landscape": "Landscape",
+        "interior": "Interior"
+      },
+      "content": [
+        {
+          "id": "230",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>Lighting of Shivalik high street tried to express Ahmedabad people&rsquo;s entrepreneurial spirit, business acumen and frugality through a minimalistic approach that links light to time, as time is money!&nbsp;<br />\r\nLighting of Shivalik high street has a minimalistic yet cutting edge design approach.<br />\r\n1st we started by a careful selection of the elements to be lit, that subtly express the build\u001fing&rsquo;s vital character while impacting the most for far vision.</p>\r\n\r\n<p>Instead of flooding it, being environmentally conscious and artistically sensitive to the out of the box architectural form, we re-sculpted it by highlighting its concrete bones and curves.&nbsp;</p>\r\n\r\n<p>Deeply convinced that architecture shall be communicative to be closer to people, so they can appropriate it and memorize it, we opted for a lighting solution of a dynamic yet passively interactive nature using media fa&ccedil;ade products seamlessly integrated ino the architectural details.</p>\r\n\r\n<p>For that, we integrated media chain lights in building&rsquo;s glazing structural lines that sparkle for one minute each starting hour of the lighting program, transforming the building, in Ahmedabad skyline, into a glowing clock like Eiffel tower in Paris. People can relate to time easily when combining their perception with degree of sky&#39;s darkness, and building gets even more interactive during the festive days where his lit spines share people happiness through a special dynamic program.&nbsp;</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "236",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/721811585313543_1477667600_259817.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "236",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/5046138203729611_1478097732_306833.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "59",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "swarnim-park",
+      "title": "Swarnim Park",
+      "client": "City of Gandhinagar",
+      "location": "Gandhinagar",
+      "teaser": " The urban salon",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/5539618503536970_1477668097_176393.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Urban",
+      
+      "search-tags": {
+        "landscape": "Landscape"
+      },
+      "content": [
+        {
+          "id": "238",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>For Swarnim Park, we were engaged to prepare the lighting strategy for the Swarnim Park initially and give the fixture layout and specifications.</p>\r\n\r\n<p>The three main strategic change we brought to already planned lighting attempts from the architects are to visually connect the two ends of 1.5km Long Park, establish a visual hierarchy and give a feel of urban living room. The park is designed for various age groups and hence lighting is also thoughtfully designed and integrated into architecture. The pedestrian poles with their white shade create homely atmosphere, yet link the park to the conical white Gandhi museum in the end of the park. Discreetly, they establish rhythms and creates intimate, joyful or celebration spaces.</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "239",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/9052360457937602_1477668097_199317.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "240",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/7894162456857551_1477668097_289235.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "60",
+      "published": true,
+      "hidemenu": false,
+      "title-slug": "dalal-houses",
+      "title": "Dalal houses",
+      "client": "Mr Rikin and Avnish Dalal",
+      "location": "Ahmedabad, India",
+      "teaser": "A play of light and shade",
+      "video": "",
+      "background": "http://www.appdemo.co.in/atelier/file-manager/content/8742323095425667_1478096041_485790.jpg",
+      "search-industries": "",
+      "search-expertise": "",
+      "search-studios": "",
+      "category1": "Residential",
+     
+      "search-tags": {
+        "landscape": "Landscape"
+      },
+      "content": [
+        {
+          "id": "243",
+          "template": "crop-1-column-text",
+          "data": {
+            "OneColumnText": "<p>This is a project for a Jain family, a Hindu movement known for its frugality. Hence, our aim was to create a cozy and comfortable outdoor space using minimal and custom designed lights using local craft. The value addition is the exclusive design using natural materials and inspired from local identity with a subtle play of light and shadows. Idea also complements the architectural and landscape minimalistic approach.&nbsp;</p>\r\n"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "244",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/8742323095425667_1477669428_485790.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        },
+        {
+          "id": "245",
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelier/file-manager/content/5548277787416979_1477669428_339160.jpg"
+          }
+        },
+        {
+          "id": 0,
+          "template": "padding",
+          "data": {
+            "Padding": 30
+          }
+        }
+      ]
+    }
+  ]
+}

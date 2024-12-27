@@ -1,0 +1,202 @@
+<pager class="homeScroller scroll-container full-height-container">
+    <page index="$index" ng-repeat="item in home" data="item">
+        <home-article item="item" class="full-height-container" ng-click="item.go()"></home-article>
+    </page>
+
+
+        <page index="5" component="carousel-1" class="test-home">
+
+         
+        
+       <section class="full-height-container minHeight700" > 
+            <div class="homeSection fullHome home-testimonials">
+       <div class="homeArticleText title-stacking">
+  <owl-carousel leadership owl-options="{autoHeight: true, margin:0, touchDrag: true, pullDrag: false, nav:false, loop:true, autoplay:true, animateOut: 'fadeOut',  animateIn: 'fadeIn', smartSpeed:250}"  wait-for-animate="true" >
+            <owl-carousel-item class="item" leadership-people ng-repeat="testi in testimonials">
+                  <div class="homeSubTitle">
+                      {{testi.testimonial}}
+                </div>
+            <div class="subheading" >{{testi.author}}
+            
+            </div>
+            </owl-carousel-item>
+              
+        </owl-carousel>
+       </page> 
+<!--
+            <div class="item">
+           <div class="homeSubTitle">
+                Apart3 from their standadrd discreet, glare-free and archietctuarlly well-integrated lighting design, they successfully touched the heart of the project, which is to connect the interiors with the exterior. The results were really stunning.
+            </div>
+             <div class="subheading" >
+              Mr. Ujjval Panchal, Architect, 72by3 Studio
+            </div>
+        </div>
+        <div class="item">
+           <div class="homeSubTitle">
+                They are not exquisite professional lighting designers but also a valuable team asset for any challenging project.
+            </div>
+             <div class="subheading" >
+              Ms. Kinny Soni, Interior Architect, KSUP studio
+            </div>
+        </div>-->
+
+
+</div>
+       
+        
+    </div>
+</section> 
+
+        </page>
+    <pager-footer index="home.length">
+        <page-footer studios="studios">
+            <map>
+                <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+            </map>
+        </page-footer>
+    </pager-footer>
+</pager>
+
+<!--
+ <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+ <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+<script>
+
+/*
+$('.owl-carousel').owlCarousel({
+ //   animateOut: 'slideOutDown',
+ //   animateIn: 'flipInX',
+    items:1,
+    margin:30,
+    loop:true,
+  //  stagePadding:30,
+ //   smartSpeed:450
+}); */
+</script>
+-->
+
+<link href="https://daneden.github.io/animate.css/animate.min.css" rel="stylesheet"/>
+<style>
+.home-testimonials .owl-carousel .owl-stage-outer{ min-height: 500px !important;}
+.home-testimonials .owl-carousel .owl-stage-outer .owl-item div.item.ng-scope{position: absolute; top:50%; transform: translate(-50%,-50%); left: 50%; padding:0 15px; width:calc(100% - 30px); }
+
+@media (max-width: 1024px){
+.homeSection{ height: 100%;}
+}
+@media (max-width: 768px){
+.test-home{ display: none;}
+}
+
+/* Feel free to change duration  */ 
+.animated  {
+  -webkit-animation-duration : 500 ms  ;
+  animation-duration : 500 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.owl-animated-out {
+  z-index : 1 
+   }
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */ 
+.owl-animated-in {
+  z-index : 0 
+   }
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeOut  {
+  -webkit-animation-name : fadeOut  ;
+  animation-name : fadeOut  ;
+}  
+.fadeIn  {
+  -webkit-animation-name : fadeIn   ;
+  animation-name : fadeIn   ;
+} 
+@-webkit-keyframes  fadeIn  {
+  0% {
+    opacity : 0  ;
+  }  
+  25%
+  {
+      opacity : 0.25;
+  }
+   50%
+  {
+      opacity : 0.5   ;
+  }
+  75%
+  {
+      opacity : 0.75   ;
+  }
+  100% {
+    opacity : 1  ;
+  }  
+}
+@keyframes fadeIn  {
+  0% {
+    opacity : 0  ;
+  }  
+  25%
+  {
+      opacity : 0.25;
+  }
+   50%
+  {
+      opacity : 0.5   ;
+  }
+  75%
+  {
+      opacity : 0.75   ;
+  }
+  100% {
+    opacity : 1  ;
+  }  
+}
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1  ;
+  }  
+  25%
+  {
+      opacity : 0.75;
+  }
+   50%
+  {
+      opacity : 0.5   ;
+  }
+  75%
+  {
+      opacity : 0.25   ;
+  }
+  100% {
+    opacity : 0   ;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  } 
+  25%
+  {
+      opacity : 0.75;
+  }
+
+   50%
+  {
+      opacity : 0.5   ;
+  }
+ 75%
+  {
+      opacity : 0.25   ;
+  }
+  100% {
+    opacity : 0   ;
+  }  
+}
+
+
+    </style>

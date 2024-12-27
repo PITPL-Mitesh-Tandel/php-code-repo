@@ -1,0 +1,2 @@
+User-agent: * 
+Disallow: https://www.atelierdada.com/atelier/account/login

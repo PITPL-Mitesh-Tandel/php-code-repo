@@ -1,0 +1,386 @@
+<div class="scroll-container show-image-background about-us-page" background-image="{{imgsrc}}" ng-if="about" style="background-image: url({{imgsrc}}); background-size: 100%; background-repeat: no-repeat; background-color: #000;">
+
+    <div class="show-header">
+        <img class="show-header__inline show-header__inline--image animate-show" ng-src="{{imgsrc}}" />
+       
+       
+        <div class="team">
+            <a href="#" class="member" ng-mouseenter="imgsrc=member1" ng-mouseleave="imgsrc=ori_team_image"></a>
+            <a href="#" class="member" ng-mouseenter="imgsrc=member2" ng-mouseleave="imgsrc=ori_team_image"></a>
+            <a href="{{language}}/about/marie-ikram-bouhlel" class="member" ng-mouseenter="imgsrc=member3" ng-mouseleave="imgsrc=ori_team_image"></a>
+            <a href="{{language}}/about/marie-ikram-bouhlel" class="member" ng-mouseenter="imgsrc=member4" ng-mouseleave="imgsrc=ori_team_image"></a>
+            <a href="#" class="member" ng-mouseenter="imgsrc=member5" ng-mouseleave="imgsrc=ori_team_image"></a>
+           <!-- <a href="#" class="member" ng-mouseenter="imgsrc=member6" ng-mouseleave="imgsrc='images/contact-us/defaultimg.jpg'"></a>-->
+          <!-- <a href="#" class="member" ></a>-->
+            <a href="#" class="member" ng-mouseenter="imgsrc=member7" ng-mouseleave="imgsrc=ori_team_image"></a>
+        </div>
+          
+        
+        
+        <div class="show-header__content">
+            <!--
+            <h2 ng-bind-html="about.title"></h2> -->
+            <span class="copy-regular" ng-bind-html="about.subtitle" ng-style="{color: '{{colors.studios}}'}" ng-if="about.subtitle.length"></span>
+
+            <!--<div class="show-header__links">
+                <a href="https://www.facebook.com/atelierdada" target="_blank">
+                    <img src="assets/frontend/images/facebook_inv.svg" />
+                </a>
+
+                <a href="https://twitter.com/atelierdada" target="_blank">
+                    <img src="assets/frontend/imOneColumnTextages/twitter_inv.svg" />
+                </a>
+
+                <a href="https://www.linkedin.com/company/atelierdada" target="_blank">
+                    <img src="assets/frontend/images/linkedin_inv.svg" />
+                </a>
+
+                <a href="https://plus.google.com/118182888794394067556" target="_blank">
+                    <img src="assets/frontend/images/gplus_inv.svg" />
+                </a>
+
+                <a href="mailto:lumiere@atelierdada.com">
+                    <img src="assets/frontend/images/env_inv.svg" />
+                </a>
+            </div>-->
+
+        <!--    <div class="copy-regular" ng-bind-html="about.teaser"></div> -->
+        </div>
+
+        <div class="show-header__gradient"></div>
+    </div>
+
+    <div class="show-content about-us-content" style="padding-top:60px;">
+        <div ng-repeat="item in about.content track by $index">
+            <template-item item="item" ng-if="item.template!='full-1-column-background-image'"></template-item>
+
+
+        </div>
+
+
+        <page-footer studios="studios">
+            <map>
+                <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+            </map>
+        </page-footer>
+    </div>
+    
+</div>
+<style>
+
+
+@media only screen  and (max-width: 768px) and (orientation:portrait) 
+{
+
+    .how-we-work .process .panel1, .how-we-work .process .panel2
+    {
+        padding-left:10px;
+        padding-right:10px;
+
+    }
+
+    .middle_panel1 img { width:230px; }
+
+  .middle_panel2 img { width:230px; }
+
+    .right_panel2
+    {
+        padding-top:13px !important;
+    }
+
+.how-we-work .panel2 .title2
+{
+    padding-top:0px !important;
+}
+.left_panel1
+{
+    padding-top:63px !important;
+}
+/*
+.right_panel1
+{
+     padding-top:63px !important;
+}
+*/
+}
+
+
+
+@media only screen and (min-width: 1024px)   and (max-width: 1024px) 
+{
+
+   .middle_panel1 img
+    {   
+    width:270px;
+
+    }
+
+    .middle_panel2 img
+    {   
+    width:270px;
+
+    }
+    .right_panel2 
+    {
+        padding-top:38px !important;
+    }
+}
+
+
+.panel1
+{
+    
+   
+}
+.left_panel1
+{
+float:left;
+width:33%;
+display: inline-table;
+
+   
+    padding-top:100px;
+    padding-bottom:50px;
+
+}
+
+.middle_panel1
+{
+float:left;
+width:33%;
+
+display: inline-table;
+
+
+}
+
+.right_panel1
+{
+float:left;
+width:33%;
+ display: inline-table;
+ 
+ padding-top:98px;
+
+
+
+
+}
+.left_panel2
+{
+float:left;
+width:33%;
+clear:both;
+padding-top:170px;
+
+}
+
+.middle_panel2
+{
+float:left;
+width:33%;
+
+
+
+
+}
+
+.right_panel2
+{
+float:left;
+width:33%;
+
+ padding-top:218px;
+
+
+
+
+}
+.how-we-work .right_panel1 li
+{
+    font-size:32px;
+}
+
+@media only screen and (max-width: 736px) 
+{
+
+.left_panel1
+{
+float:none;
+width:100%;
+display: inline-table;
+padding-top:0px;
+padding-bottom:0px;
+
+}
+.left_panel2
+{
+float:none;
+width:100%;
+display: inline-table;
+padding-top:0px;
+padding-bottom:0px;
+
+}
+.how-we-work .panel2 .title2
+{
+    padding-top:0px;
+}
+
+
+.middle_panel1 
+{
+    float:none;
+    width:100%;
+    text-align:center;
+
+}
+.middle_panel1 img
+{   
+   width:50%;
+
+}
+
+.middle_panel2 
+{
+    float:none;
+    width:100%;
+    text-align:center;
+}
+
+.right_panel1
+{
+float:none;
+width:100%;
+ text-align:center;
+ margin: 0 auto;
+ padding:0px;
+}
+
+.right_panel1 ul
+{
+margin: 0 auto;
+}
+
+.middle_panel2 img
+{   
+   width:50%;
+}
+.left_panel2
+{
+float:none;
+width:100%;
+clear:both;
+
+
+}
+
+.middle_panel2
+{
+clear: left;
+width:100%;
+
+
+
+
+}
+
+.right_panel2
+{
+
+width:100%;
+padding-top:15px;
+clear:both;
+float:none;
+ text-align:center;
+
+
+}
+.how-we-work .process ul
+{
+    /*padding:0px;*/
+    padding-left:0px;
+    width:100%;
+    list-style:none;
+      text-align:center;
+      padding-bottom:10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+
+   
+}
+
+.how-we-work .process .panel1, .how-we-work .process .panel2
+{
+   
+   /*
+    padding-left:0px;
+    padding-right:0px;
+     margin-left: auto;
+margin-right: auto;
+padding-top:0px;*/
+
+
+padding:0;
+margin: 0 auto;
+
+
+
+
+
+
+}
+
+.how-we-work .panel2 .title2
+{
+    font-size:24px;
+}
+.how-we-work .title1, .how-we-work .title2
+{
+    font-size:24px;
+}
+
+.how-we-work .process li
+{
+    font-family:"questrial";
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    font-size:24px;
+
+
+}
+.how-we-work .panel5
+{
+   padding-top:20px;
+margin: 0 auto;
+width:100%;
+float:none;
+
+
+}
+.how-we-work .panel5
+{
+    padding-top:20px;
+    margin: 0 auto;
+    width:100%;
+    float:none;
+
+
+}
+.panel-boxes
+{
+     float:none;
+     width:100%;
+     text-align:center;
+    min-height:auto;
+
+}
+.panel-boxes img
+{
+      width:50%;
+      text-align:center;
+}   
+}
+
+</style>

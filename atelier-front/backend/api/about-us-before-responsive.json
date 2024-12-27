@@ -1,0 +1,32 @@
+{
+  "title": "About Us",
+  "subtitle": "",
+  "teaser": "We connect people by light!",
+  "background": "http://www.atelierdada.com/assets/frontend/images/Atelier-dada-Team_Zoom.jpg",
+  "content": [
+    {
+      "id": 4409,
+      "template": "about-us",
+      "data": {
+        "OneColumnText": "<span class='copy-large'>We design the future</span><div class='design_future'><div class='image_part'></div><div class='about-left-content'><p> We are an imaginative multidisciplinary team of design professionals who provide state-of-the art consultation  in  Architectural and Urban Lighting Design. <p>We approach Lighting Design in a wholistic manner, bringing social and artistic dimension with technical Know-How.</p><p>We provide innovation, talent, multidisciplinary experience with proven ability to deliver cutting-edge lighting solution and related services to our client, with global vision and local actions.</p> <p>We are Professional Design Studio solely dealing with Light, offering impartial service in the interest of the project to our client.</p><p>We operate from our unique studio @ Paris in France.</p></div>",
+        "Padding": ""
+      }
+    },
+      {
+      "id": 4411,
+      "template": "about-us",
+      "data": {
+        "OneColumnText": "<span class='copy-large'>Manifesto</span><p>The work of our team deals with the issue of social place making.The environmental problems  that we face have changed dramatically in the recent past, yet mankind has not. It is the timeless qualities of humanness and nature that provide continuity and familiarity amongst different cultures and different moments in history.<p>It is our attempt through design to focus on these fundamental characteristics and needs to translate them into design triggers that are appropriate to their context and cultural milieu.</p>",
+        "Padding": ""
+      }
+    },
+    {
+      "id": 4410,
+      "template": "about-us",
+      "data": {
+        "OneColumnText": "<div class='how-we-work'><span class='copy-large'>How we work</span><span class='typed'>Small teams working on big challenges in honest collaboration with our clients.</span><div class='container process'><div class='panel1'><h4 class='title1'>Small Teams</h4><ul class='benefits1 _right'><li>Big ideas</li></ul></div><div class='panel2'><h4 class='title2'>Client as a <span>partner.</span></h4><ul class='benefits2 _right'><li>Challenge reframing</li>    <li>Icon creating</li><li>Environmental sensitive</li><li>Users in the core</li></ul></div><div class='panel panel5'><span class='copy-large'>Our design process</span><div class='panel-boxes'><img class='' src='images/THINK.png' alt=''></div><div class='panel-boxes'><img class='' src='images/PLAN.png' alt=''></div><div class='panel-boxes'><img class='' src='images/EXECUTE.png' alt=''></div><div class='panel-boxes'><img class='' src='images/FOLLOW-UP.png' alt=''></div></div></div></div>",
+        "Padding": ""
+      }
+    }
+  ]
+}

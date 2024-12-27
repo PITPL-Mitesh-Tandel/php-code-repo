@@ -363,22 +363,13 @@ class block extends content {
      */
     public function getSitemapContentsByType($content_types) {
 
-        $sql = "select bl.*, b.strSlug as block_slug, b.id as block_id,
-                  cb.id as content_block_id, cb.strHeading as block_heading,
-                  cb.enmStatus as content_block_status, cb.txtShortDescription as block_description,
-                  cb.intPosition as block_position, b.strType as block_type, b.strContentBlock as block_title,
-                  cb.intContentId as content_id, c.strContentType, c.strSlug, l.strSlug as language_slug, c.dtiModified
-                from ".$this->_rel_content_blocks." as cb
-                inner join ".$this->_mst_block." as b
-                    on b.id = cb.intBlockId
-                inner join ".$this->_table." as c
-                    on c.id = cb.intContentId and c.strContentType in ('".implode("', '", $content_types)."')
+        $sql = "select c.id, c.strContentType, c.strSlug, l.strSlug as language_slug, c.dtiModified
+                from ".$this->_table." as c
                 inner join ".$this->_language_table." as l
                     on l.id = c.idLang
-                left join ".$this->_rel_block_details." as bl
-                    on cb.id = bl.intContentBlockId
-                where cb.enmDeleted = '0'
-                order by cb.intPosition, bl.intPosition";
+                where c.enmDeleted = '0' 
+                    and c.enmStatus = '1' 
+                    and c.strContentType in ('".implode("', '", $content_types)."')";
         return $this->getResults($sql);
 
     }

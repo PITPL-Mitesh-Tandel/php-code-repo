@@ -1,0 +1,13 @@
+<div class="ti-filters">
+    <a ng-click="tc.filter(category)" ng-class="{'ti-filters__highlight': tc.highlighted == category}" ng-repeat="category in tc.categories">{{ category }}</a>
+</div>
+
+<div class="scroll-container">
+    <template-item item="page" ng-repeat="page in tc.think" class="ti-page"></template-item>
+
+    <page-footer studios="studios">
+        <map>
+            <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+        </map>
+    </page-footer>
+</div>

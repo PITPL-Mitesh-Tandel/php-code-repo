@@ -1,0 +1,24 @@
+<div ng-controller="NavigationController" class="transition-background-color full-height-container noMinHeightImp" ng-style="style">
+    <div class="valign">
+        <div class="valign-cell menuLoc">
+            <ul id="nav">
+                <li ng-repeat="link in links" ng-mouseenter="updateColor(link.background)">
+                    <a ui-sref="{{link.state}}" ng-mouseenter="updatefColor(link.color)" ng-style="fcolor">
+                        <h3 class="center-left-aligned-text">{{link.title}}</h3>
+                    </a>
+                    <div class="subMenu" ng-if="link.title=='Work'">
+                    <ul>
+                    <li><a href="#">Masterplan</a></li>
+                    <li><a href="#">Exterior & Landscape</a></li>
+                    <li><a href="#">Mixed-Use</a></li>
+                    <li><a href="#">Museums and cultural institutions</a></li>
+                    <li><a href="#">Hospitality</a></li>
+                    <li><a href="#">Retail & Galleries</a></li>
+                    <li><a href="#">Residential</a></li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

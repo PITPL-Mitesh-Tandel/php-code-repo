@@ -1,0 +1,16 @@
+{
+  "title": "About Us",
+  "subtitle": "",
+  "teaser": "We connect people by light!",
+  "background": "marie-about.jpg",
+  "content": [
+    {
+      "id": 4409,
+      "template": "about-us",
+      "data": {
+        "OneColumnText": "<span class='copy-large'>Marie Ikram Bouhlel Jhaveri</span><div class='copy-medium'>Lighting design Principal of Atelier dada</div><div class='design_future'><div class='about-left-content'><p> Marie Ikram is the visionary spirit behind Atelier dada design culture. With strong background coming from art, architecture and urban design prior to specializing into lighting design, Marie Ikram trained under famous American firm where she learned American architectural standards and working method, Then trained and worked as a lighting designer in France, Switzerland and Belgium under internationally recognized experts where she learned various approaches and methods, that polished her skills and widened her expertise.</p> <p>At Atelier dada, she handles the projects with global vision, and local action. Imaginative, passionate and innovative, she is always looking for a multidimensional and \"out of the box\" design solution and thus constantly engaging the studio with various passionate experts from diverse fields. She adds poetry non less practicality to all the projects that she handles. whatever in France, India or in the international.</p><p>Marie Ikram is also active in establishing Lighting Design awareness through educative seminars and workshop in France, Tunisia and India.</p></div>",
+        "Padding": ""
+      }
+    }
+  ]
+}

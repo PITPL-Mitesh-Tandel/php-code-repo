@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atelier dada - Lighting Architects</title>
+ <base href="http://www.atelierdada.com/" target="_blank">
+   
+<!--<base href="http://127.0.0.1:8080/atelierdada/" target="_blank">-->
+    
+<!--<base href="http://www.atelierdada.com/" target="_blank">-->
+
+<!--  <style>
+    @import url("//hello.myfonts.net/count/2c2939");
+
+  
+@font-face {font-family: 'HelveticaNeueLTStd-Bd';src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_0_0.eot');src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_0_0.eot?#iefix') format('embedded-opentype'),url('assets/frontend/HelveticaFonts/webfonts/2C2939_0_0.woff') format('woff'),url('HelveticaFonts/webfonts/2C2939_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'HelveticaNeueLTStd-Roman';src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_1_0.eot');src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_1_0.eot?#iefix') format('embedded-opentype'),url('assets/frontend/HelveticaFonts/webfonts/2C2939_1_0.woff') format('woff'),url('HelveticaFonts/webfonts/2C2939_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'HelveticaNeueLTStd-Th';src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_2_0.eot');src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_2_0.eot?#iefix') format('embedded-opentype'),url('assets/frontend/HelveticaFonts/webfonts/2C2939_2_0.woff') format('woff'),url('HelveticaFonts/webfonts/2C2939_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'HelveticaNeueLTStd-Md';src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_3_0.eot');src: url('assets/frontend/HelveticaFonts/webfonts/2C2939_3_0.eot?#iefix') format('embedded-opentype'),url('assets/frontend/HelveticaFonts/webfonts/2C2939_3_0.woff') format('woff'),url('HelveticaFonts/webfonts/2C2939_3_0.ttf') format('truetype');}
+ 
+
+    </style> -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!--<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> -->
+
+   
+    
+
+    <link rel="stylesheet" href="combined.min.css">
+
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/assets/frontend/css/ie9.css" />
+    <![endif]-->
+
+    <link rel="icon" type="image/png" href="favicon.ico" />
+
+    <!-- fonts -->
+   <!--<link rel="stylesheet" type="text/css" href="assets/frontend/HelveticaFonts/HelveticaFonts.css">-->
+ <!-- <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>-->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Open+Sans|Raleway|Roboto" rel="stylesheet">-->
+ <!--<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">-->
+ <!--<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:600|PT+Serif" rel="stylesheet">-->
+
+<!--!<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Muli:400,700,800|Quintessential" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Questrial|Quintessential" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> -->
+    <!--Set the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body  ng-app="app">
+    <div id="frame" ng-controller="MainController" ng-class="{'pager': pagerContent, 'pager-mobile': pagerContentMobile, 'main-show': showLoader}">
+        <!--Loader-->
+        <!--<div class="topLoader"></div>
+        <div class="bottomLoader"></div>
+        <div class="leftLoader"></div>
+        <div class="rightLoader"></div>
+        <div class="topLoaderMask"></div>
+        <div class="bottomLoaderMask"></div>
+        <div class="leftLoaderMask"></div>
+        <div class="rightLoaderMask"></div>
+        <img class="loader-ie9" src="assets/frontend/images/loader.gif" />-->
+
+        <!--
+        <ng-include src="assets/frontend/partials/controls/menu.html"></ng-include>
+        -->
+        <div class="headerTop" ng-class="{'headerTopVisible': headerDisplay == true, 'headerTopCat':  display_sub_menu=='0'}">
+        <div class="main-menu leftLogo" ng-class="{'main-menu-active': controlsVisible, 'main-menu-busy': blockInteraction}">
+        <ul>
+            <li>
+                <div ng-click="toggleMenu()" class="menuShow" ng-class="{'active': menuActive == true}">
+                    <div class="menLayer1"></div>
+                    <div class="menLayer2"></div>
+                    <div class="menLayer3"></div>
+                </div>
+            </li>
+
+            <li class="menExpander cf" animate-auto animate-auto-default-width="121" animate-auto-default-height="63">
+                <div ng-click="goHome()" class="breadCrumbNav"><img class="DadaMain" src="images/atelier-logo.png"/></div>
+    
+                <div class="oh-by-golly-crumbs" ng-show="breadcrumbs.length">
+                    <div class="oh-by-golly-crumbs-width">
+                        <div ng-repeat="breadcrumb in breadcrumbs" class="locTitle">
+                            <div class="catText" ng-class="{'subcat':  breadcrumb.display_menu=='1'}">
+                                <a ng-if="$index !== breadcrumbs.length - 1" ui-sref="{{breadcrumb.ref}}">{{breadcrumb.title}}</a>
+                                <span ng-if="$index === breadcrumbs.length - 1">{{breadcrumb.title}}</span>
+                                       
+                                        <ul ng-if="breadcrumb.display_menu=='1' && lang2=='en' ">
+                                            <li  ng-class="{'active_sub_menu':  sub_cat==''}" ><a href="{{lang2}}/work">Featured</a></li>
+                                            <li  ng-class="{'active_sub_menu':  sub_cat=='commercial' || sub_cat1=='commercial' || sub_cat2=='commercial'  }" ><a href="{{lang2}}/work/category/commercial">Commercial</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='event' || sub_cat1=='event' || sub_cat2=='event' }"><a href="{{lang2}}/work/category/event">Event</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='hospitality'|| sub_cat1=='hospitality'|| sub_cat2=='hospitality'}"><a href="{{lang2}}/work/category/hospitality">Hospitality</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='infrastructure' || sub_cat1=='infrastructure' || sub_cat2=='infrastructure' }"><a href="{{lang2}}/work/category/infrastructure">Infrastructure</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='institutions' || sub_cat1=='institutions' || sub_cat1=='institutions'  }"><a href="{{lang2}}/work/category/institutions">Institutions</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='product' ||  sub_cat1=='product' ||  sub_cat2=='product'  }"><a href="{{lang2}}/work/category/product">Product</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='residential' || sub_cat1=='residential'|| sub_cat2=='residential' }"><a href="{{lang2}}/work/category/residential">Residential</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='retail' ||  sub_cat1=='retail' ||  sub_cat2=='retail'}"><a href="{{lang2}}/work/category/retail">Retail</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='urban' || sub_cat1=='urban'|| sub_cat2=='urban'}"><a href="{{lang2}}/work/category/urban">Urban</a></li>
+                                        </ul>
+                                        <ul ng-if="breadcrumb.display_menu=='1' && lang2=='fr' ">
+                                              <li  ng-class="{'active_sub_menu':  sub_cat==''}" ><a href="{{lang2}}/work">Sélection</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='commerciale' || sub_cat1=='commerciale' || sub_cat2=='commerciale'  }"><a href="{{lang2}}/work/category/Commerciale">Commerciale</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='evènementiel' || sub_cat1=='evènementiel' || sub_cat2=='evènementiel'  }"><a href="{{lang2}}/work/category/evènementiel">Evènementiel</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='hôtelier' || sub_cat1=='hôtelier' || sub_cat2=='hôtelier'  }"><a href="{{lang2}}/work/category/hôtelier">Hôtelier</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='infrastructure' || sub_cat1=='infrastructure' || sub_cat2=='infrastructure'  }"><a href="{{lang2}}/work/category/infrastructure">Infrastructure</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='institutionnel' || sub_cat1=='institutionnel' || sub_cat2=='institutionnel'  }"><a href="{{lang2}}/work/category/institutionnel">Institutionnel</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='produit' || sub_cat1=='produit' || sub_cat2=='produit'  }"><a href="{{lang2}}/work/category/produit">Produit</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='résidentiel' || sub_cat1=='résidentiel' || sub_cat2=='résidentiel'  }"><a href="{{lang2}}/work/category/résidentiel">Résidentiel</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='retail' || sub_cat1=='retail' || sub_cat2=='retail'  }"><a href="{{lang2}}/work/category/retail">Retail</a></li>
+                                            <li ng-class="{'active_sub_menu':  sub_cat=='urbain' || sub_cat1=='urbain' || sub_cat2=='urbain'  }"><a href="{{lang2}}/work/category/urbain">Urbain</a></li>
+                                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</div>
+
+<div class="main-menu main-menu-right-aligned seachBox" ng-class="{'main-menu-active': controlsVisible, 'main-menu-busy': blockInteraction}">
+    <ul>
+       
+        <li><a ui-sref="pages-home({lang: 'en'})"  ng-class="{'active':  lang2=='en'}">EN</a></li>
+       <li><a href="fr/index.html"  ng-class="{'active':  lang2=='fr'}"  >FR</a></li>
+      <!--  <li><a ui-sref="pages-home({lang: 'fr'})"  ng-class="{'active':  lang2=='fr'}"  >FR</a></li>-->
+        
+       <!--
+        <li><a ui-sref="ar" target="_blank" ui-sref-active="active" >ا‎</a></li>
+        <li><a  ui-sref="hi" target="_blank" ui-sref-active="active" >ई</a></li>
+        -->
+       
+
+        <li>
+            <div ng-click="toggleSearch()" ng-class="{magActive: magToggle}">
+                <img class="magGlass" src="images/search-icon.png"/>
+                <div class="menLayer1 menSearch1"></div>
+                <div class="menLayer3 menSearch2"></div>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+</div>
+
+<div class="main-menu main-menu-bottom-right-aligned" ng-class="{'main-menu-active': controlsVisible, 'main-menu-busy': blockInteraction}">
+    <ul>
+        <li ng-if="showPreviewCheckbox">
+            <div ng-click="clearAndRefresh()" class="whiteBG cache-button" cache-refresh>
+                Clear Cache
+            </div>
+        </li>
+        <li ng-if="showPreviewCheckbox">
+            <label class="preview-checkbox whiteBG">
+                Preview Mode
+                <input type="checkbox" ng-click="previewMode()" ng-checked="preview" />
+            </label>
+        </li>
+    </ul>
+</div>
+
+
+    
+
+        <div class="content-area">
+            <div ui-view animate-in class="transition full-height-container" ng-class="{'controls-active': controlsActive, 'controls-inactive': ! controlsActive}"></div>
+        </div>
+
+        <!--<div class="topWhiteLine"></div>
+        <div class="bottomWhiteLine"></div>
+        <div class="leftWhiteLine"></div>
+        <div class="rightWhiteLine"></div> -->
+    </div>
+	
+	
+    
+	<script>
+        var settings = {
+            AWS_BASE_PATH: 'http://www.aterlierdada.com/'
+        };
+    </script>
+    
+    <script src="combined.min.js" ></script>
+   <!--<script src="assets/frontend/js/readmore.js" ></script>-->
+    <script src="custom.js"></script>
+
+    
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script>
+		(function($j){
+			$j(window).on("load",function(){
+				
+				$j("#content-1").mCustomScrollbar({
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+	</script> -->
+
+    
+</body>
+</html>

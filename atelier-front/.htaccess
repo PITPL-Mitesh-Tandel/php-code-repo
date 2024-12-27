@@ -1,0 +1,22 @@
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+
+RewriteCond %{HTTP_HOST} ^atelierdada.com [NC]
+RewriteRule ^ https://www.atelierdada.com/$1 [L,R=301,NC]
+
+# Don't rewrite files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+
+# Rewrite everything else to index.html to allow html5 state links
+RewriteRule ^  /index.html [L]
+
+Redirect 301 /5.html https://www.atelierdada.com/en/about
+
+Redirect 301 /1.html https://www.atelierdada.com/en/media

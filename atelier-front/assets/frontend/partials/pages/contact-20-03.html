@@ -1,0 +1,206 @@
+<div class="scroll-container contactPage full-height-container" >
+
+          <div class="page-footer" studios="studios">
+        <div class="outerMapCont ng-scope" ng-class="{'retailTextCont': retail &amp;&amp; ! graphic, 'graphicTextCont': graphic &amp;&amp; ! retail}">
+    
+
+    <div class="mapHolder">
+        <img class="aspectMap" src="assets/frontend/images/WorldMap-less-height.png">
+        <!--<div style="background-image: url(/assets/frontend/images/WorldMap.svg);" class=" worldMap" ></div>-->
+
+        <div class="mapTitle">
+            <!-- ngIf: language=='en' -->
+            <span class="dadahWhiteLogo ng-scope" ng-if="language=='en'">Say Hello!</span>
+            <div  ng-if="language=='en'" class="sub_title_map">Give us a call, send us an email or drop by to have a chat <img src="assets/frontend/images/face-1298202_640.png" height=25 width=25 style="padding-top:5px" valign="bottom" /> </div>
+            <!-- end ngIf: language=='en' -->
+           <!-- ngIf: language=='fr' -->
+           
+        </div>
+
+        <!--<div class="graphicText">
+            <img src="/assets/frontend/images/background7.jpg"/>
+
+            <a href="#" ng-click="retail = false; graphic = false;" style="text-decoration: underline; color: #bfd601;">Back to map</a>
+        </div>-->
+
+        <div class="retailText">
+            <p>
+               
+            </p>
+
+            <!--<p>Something about the wonders of <a style="text-decoration: underline; color: #bfd601;" ng-click="graphic = true; retail = false;">our process.</a></p>-->
+            <a ng-click="retail = false; graphic = false;" style="text-decoration: underline; color: #bfd601;">Back to map</a>
+
+        </div>
+
+        <div class="cityCont" >
+            <!-- ngRepeat: studio in studios --><div ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude" class="">
+    <div class="city" ng-style="{top: '53.1%', left: '48%'}" ng-class="{'largeCity': isSelected(), 'fadeCity': (!isSelected() &amp;&amp; hideText()), 'cityRightAligned': studio.alias === 'london' || studio.alias === 'los-angeles' || studio.alias === 'doha'}" style="top: 48.1%; left: 48.3%;">
+        <div class="dot smallDot" ng-click="select(studio.title)"></div>
+        <div class="cityname smallCity" ng-click="select(studio.title)">
+            <span class="ng-binding">Paris</span>
+        </div>
+    </div>
+    <div class="cityInfos">
+        <div class="mapText mapTextCity MedLibre exitText" >
+            <!--<div class="studAddress">{{studio.address}}</div>-->
+            <div class="contactInfo">
+              <!--  <div class="gMaps"><a target="_blank" href="https://www.google.com/maps?q={{studio.address}}"><img src="assets/frontend/images/googleMaps.svg"><div>Google Maps</div></a></div>-->
+               <!-- <div class="telephone"><a href="{{studio['clean-phone'] | tel}}"><img src="assets/frontend/images/telephone.svg"><div>{{studio.telephone}}</div></a></div>
+                <div class="planeEmail"><a href="{{studio.email | mailto}}" target="_blank"><img src="assets/frontend/images/paperPlane.svg"><div>{{studio.email}}</div></a></div>-->
+               
+                <span>
+                    <div class="studioBtn whiteButton ng-binding">
+                      <a href="/studios/paris"></a>
+                      Appt 102/ 59 Rue Stephensen - 75018.  lumiere@atelierdada.com
+                        </div>
+                    </span>
+             </div>
+        </div>
+    </div>
+</div><!-- end ngRepeat: studio in studios -->
+        </div>
+    </div>
+
+    <div class="mobMap">
+        <img src="assets/frontend/images/WorldMap-less-height.png" class="img-responsive">
+
+        <div class="mapTitle">
+            <a class="noDecoration" href="studios"><span class="uppercase"><img class="mobFitchLogo" src="images/atelier-logo.png"></span> <span class="greenText">Studios</span></a>
+        </div>
+        <!--<div class="mapList">
+            <mob-map ng-repeat="studio in studios" studio="studio"></mob-map>
+        </div>-->
+    </div>
+
+    
+</div>
+    </div> 
+    <div class="show-content">
+    <div class="formContainer">
+        <div class="mobile_say_hello">
+               <div class="" style="text-align:center">
+                <h3 class="whiteTitle">Say Hello!</h3>
+                <p style="color:#777;"  >Give us a call, send us an email or drop by to have a chat <img src="assets/frontend/images/face-1298202_640.png"  height=25 width=25 style="padding-top:5px;" valign="bottom"  /> </p>
+        </div>
+        </div>
+        <div class="contactForm">
+            <div id="contact1" >
+               
+<div class="say_hello">
+     <h3 class="whiteTitle left">Invite Us</h3>
+    <p>We love to share our knowledge with audience. Invite us to spread lighting design awarness and celebrate life by light!</p>
+
+
+</div>
+<div class="studio_icon" ng-click="gotostudio()" >
+   
+
+    </div>
+</div>       
+  <div class="follow">
+ <h3 class="whiteTitle left">Follow</h3> <p> 
+      We're social, follow us on your favorite social media sites. 
+    
+           <!--  <span style="width:100%;" ><a href="#" style=" color:#FFF">Twitter</a></span>-->
+             <span style="width:100%; color:#FFF" ><a href="https://www.facebook.com/Atelierdada" target="_new" style="color:#777; text-decoration:underline"  >Facebook</a></span>
+              <span style="width:100%; color:#FFF" ><a href="https://vimeo.com/user24823308" style=" color:#777; text-decoration:underline"  >Vimeo</a></span>
+               </p><co></co>
+              
+    </div>       
+                       
+    <div class="curront-position">
+            <h3 class="whiteTitle left">Grow with us</h3> 
+            <div class="career_text"><p>
+         Join us in an inspiring, fast-paced, exciting and ever-changing environment where new ideas and initiatives are the “dada”. Since we are constantly growing, we’re always on the lookout for talent to complement and enrich our team. Would you like to be part of the journey? 
+           Then write us on <a href="mailto:lumiere@atelierdada.com">lumiere@atelierdada.com.</a> </p>
+          
+             
+   </div>
+   
+  
+    </div>    
+    <div> 
+        </div>
+        
+     
+
+                </div>
+                <div class="ilabsignature">
+                   <span class="send-url" ><a href='http://www.inheritlab.com'>Website by Inherit Lab</a></span>
+                   </div>
+        </div>
+    </div>
+    <footer >
+        <div class="footerCont">
+            <div class="width25">
+                <a href="contact">
+                    <img src="assets/frontend/images/footerEmail.png">
+                </a>
+
+                <a href="https://www.facebook.com/Atelierdada" target="_blank">
+                    <img src="assets/frontend/images/footerFacebook.png">
+                </a>
+
+                <a href="https://twitter.com/atelierdada" target="_blank">
+                    <img src="assets/frontend/images/footerTwitter.png">
+                </a>
+
+                <a href="https://www.linkedin.com/company/atelierdada" target="_blank">
+                    <img src="assets/frontend/images/footerLinkedIn.png">
+                </a>
+            </div>
+
+            <!-- ngIf: language=='en' --><div class="width75 ng-scope" ng-if="language=='en'">
+                ©<span date-now="yyyy">2017</span> ATELIER DADA. All rights reserved
+             
+            </div><!-- end ngIf: language=='en' -->
+
+               <!-- ngIf: language=='fr' -->
+
+
+        </div>
+    </footer>
+
+  <!--  <page-footer studios="studios">
+            <map>
+                <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+            </map>
+        </page-footer>-->
+</div>  
+
+    </div>
+
+    <style>
+
+@media all and (max-width:768px) {
+
+    .mobile_say_hello
+    {
+        display:'';
+    }
+    .mapTitle
+    {
+        display:none;
+    }
+    .cityCont
+    {
+        display:none;
+    }
+    .studio_icon
+    {
+        margin-top:0px;
+        margin-bottom:14px;
+    }
+    
+}
+
+@media all and (min-width:768px) {
+
+    .mobile_say_hello
+    {
+        display:none;
+    }
+}
+
+    </style>

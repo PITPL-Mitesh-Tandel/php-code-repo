@@ -1,0 +1,38 @@
+<div class="news-article scroll-container">
+    <div class="cf article-holder">
+<span ng-if="nc.news.background!=''">
+<img  class="news-article-image" ng-src="{{nc.news.background}}" iu-image-element />
+</span>
+
+        <div class="news-article-body news-details-container">
+            <h2 class="news-article-title">
+                {{nc.news.title}}
+            </h2>
+
+            <div class="news-article-date">{{ nc.news.date | ordinalDate: 'dd/MM/yyyy' }}</div>
+
+            <div class="news-article-category">
+                <span ng-style="{color: '#FFDF00'}">{{ nc.news.category }}</span>
+                <span ng-if="nc.news.location.length">
+                    | {{nc.news.location}}
+                </span>
+            </div>
+
+            <span ng-bind-html="nc.news.content" class="news-article-content"></span>
+
+            <img ng-src="{{nc.news.logo}}" class="news-article-logo" iu-image-element />
+
+            <div class="news-article-external-link copy-reduced" ng-if="nc.news.link.length && ['http://', 'https://'].indexOf(nc.news.link) === -1">
+                <img src="assets/frontend/images/newsArticle.png">
+                <a href="{{nc.news.link}}" target="_blank" ng-style="{'text-decoration-color': '{{colors.news}}'}">
+                    {{nc.news.link}}
+                </a>
+            </div>
+        </div>
+        <div class="more-news">
+                <a ui-sref="pages-news({lang: language})" class="news-article-see-more">
+                    <img src="assets/frontend/images/news/see-more.png" alt="">
+                </a>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div ng-if="data" class="scroll-container scroll-container-mobile">
+    <pager class="studioTop">
+        <page index="$index"
+              ng-repeat="item in data|limitTo:(data.length/5)" data="item" class="cf"
+              ng-init="$index === Math.floor(data.length/5) ? itm = 'heightSet itm' + (data.length - (Math.floor(data.length/5)* 5 )) : itm = 'heightSet'">
+
+            <panel ng-click="item.go()" class="{{itm}}" ng-repeat="item in data.slice($index*5,($index*5+5)) track by $index">
+                <div class="textGrad zIndex2"></div>
+                <div class="cityText">
+                    <div class="cityName"><h4>{{item.title}}</h4></div>
+
+                    <div class="cityLocation subheading">
+                        <span>{{item.country}}</span>
+                        <span>
+                            | <span>{{item.continent}}</span>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="hArticleImg zoomer" style="background-image: url('{{item.verticalbackground}}'); background-size: cover; background-position: center;"></div>
+            </panel>
+        </page>
+
+        <pager-footer index="data.length">
+            <page-footer studios="studios">
+                <map>
+                    <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+                </map>
+            </page-footer>
+        </pager-footer>
+    </pager>
+</div>

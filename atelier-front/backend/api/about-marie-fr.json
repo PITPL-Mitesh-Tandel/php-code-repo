@@ -1,0 +1,16 @@
+{
+  "title": "About Us",
+  "subtitle": "",
+  "teaser": "We connect people by light!",
+  "background": "marie-about.jpg",
+  "content": [
+    {
+      "id": 4409,
+      "template": "about-us",
+      "data": {
+        "OneColumnText": "<span class='copy-large'>Marie Ikram Bouhlel Jhaveri</span><div class='copy-medium'>Conceptrice lumière Principale de l'Atelier dada</div><div class='design_future'><div class='about-left-content'><p> Architecte-Urbaniste de formation, Marie Ikram est l’esprit visionnaire derrière\n“Atelier dada- Architects of Light.”</p><p>Solidement formée comme Architecte- Urbaniste à l'ENAU, avec des études de DEA en Arts et Techiques des\nArts de l'ISBAT où elle a entamé une recherche portant sur \"la perception humaine à différentes vitesses\", elle s’est spécialisée ensuite en conception lumière par un master professionnel à l'ENSAP de Bordeaux où elle a finit lauréate de promo avec sa recherche portant sur l'éclairage et le développement durable. \nMarie Ikram a exerçé sour des piénniers de l'éclairage urbain en France et des spécialistes reconnus internationaux en France, Belgique et\nSuisse, où elle a acquiert une riche expérience professionnelle, lui donnant\nune flexibilité totale quant au traitement de projets lumière diverses et complexes.</p><p>Sensible, passionnée et créative, elle cherche toujours une solution d’éclairage\nmultidimensionnelle , sortant des sentiers battus et engage constamment l’équipe avec des experts venant\nd’horizons divers. </p><p>Elle ajoute poésie autant que pragmatisme aux projets qu’elle\ntraite en France et en Inde; Et continue son parcours professionnel, en métissant\ncréativement avec d’autres cultures...</p></div>",
+        "Padding": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+#show the index page by default
+DirectoryIndex index.html
+#disable listing of directory content
+Options -Indexes
+
+RewriteEngine off
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>

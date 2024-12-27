@@ -1,0 +1,178 @@
+<div class="SearchContainer" style="color: #fff">
+    <div class="primary-filter" ng-class="{expanded : (expand === 1 || expand === 2 || expand === 3)}">
+        <a ng-click="selectFilter('work')" ng-class="{selectFilterHighlight: selectedFilters['work']}" ng-if="isVisible('work') && language=='en'">Work</a>
+        <a ng-click="selectFilter('publications')" ng-class="{selectFilterHighlight: selectedFilters['publications']}" ng-if="isVisible('publications') && language=='en'">Publications</a>
+        <a ng-click="selectFilter('news')" ng-class="{selectFilterHighlight: selectedFilters['news']}" ng-if="isVisible('news') && language=='en'">News</a>
+        <a ng-click="selectFilter('studios')" ng-class="{selectFilterHighlight: selectedFilters['studios']}" ng-if="isVisible('studios') && language=='en'">Studios</a>
+
+                <a ng-click="selectFilter('work')" ng-class="{selectFilterHighlight: selectedFilters['work']}" ng-if="isVisible('work') && language=='fr'">Projet</a>
+        <a ng-click="selectFilter('publications')" ng-class="{selectFilterHighlight: selectedFilters['publications']}" ng-if="isVisible('publications') && language=='fr'">Média</a>
+        <a ng-click="selectFilter('news')" ng-class="{selectFilterHighlight: selectedFilters['news']}" ng-if="isVisible('news') && language=='fr'">Actualité</a>
+        <a ng-click="selectFilter('studios')" ng-class="{selectFilterHighlight: selectedFilters['studios']}" ng-if="isVisible('studios') && language=='fr'">Atelier</a>
+
+
+        <a ng-click="clearSearch()" class="clear-search">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 155 155" enable-background="new 0 0 155 155" xml:space="preserve">
+                <g>
+                    <path d="M108.1,18.5c-24.7-24.7-64.8-24.7-89.6,0c-24.7,24.7-24.7,64.8,0,89.6c24.7,24.7,64.8,24.7,89.6,0
+                    C132.8,83.4,132.8,43.3,108.1,18.5z M95.9,95.9c-18,18-47.1,18-65.1,0c-18-18-18-47.1,0-65.1c18-18,47.1-18,65.1,0
+                    C113.8,48.8,113.8,77.9,95.9,95.9z"></path>
+                    <rect x="107" y="90.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -50.52 121.9658)" width="30" height="63.3"></rect>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <!-- RESULTS-->
+    <div class="allResults">
+        <div class="results" ng-repeat="item in resultsGrid" ng-class="{
+            'reSort4': item.length === 4,
+            'reSort3': item.length === 3,
+            'reSort2': item.length === 2,
+            'reSort1': item.length === 1,
+            'reSort': item.length < 5
+        }">
+            <div item="item" ng-class="{'searchEnter': !(expand === 1 || expand === 2 || expand === 3) && animateIn}">
+                <!-- LEFT COLUMN -->
+                <div class="search50Left">
+
+                    <a ng-click="item[0].go()" ng-if="item[0]">
+                        <div class="searchResult threeWide">
+                            <div class="resultImg" ng-style="{'background-image': 'url(\'{{item[0].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div><!--
+                         --><div class="resultLabel">
+                                <div class="labelCont">
+                                    <h2 class="copy-small" ng-bind-html="item[0].title | characters : 50"></h2>
+                                   <!-- <h3 class="title-small" ng-bind-html="item[0].subtitle | characters : 50"></h3>-->
+
+                                    <span class="result-tags subheading">
+                                        <span ng-style="{'color': colors[item[0]['base-type']]}" ng-bind-html="item[0].derivative | searchTags"></span>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a><!--
+
+                    --><a ng-click="item[1].go()" ng-if="item[1]">
+                    <div class="searchResult twoWide left">
+                        <div class="resultLabel">
+                            <div class="labelCont">
+                                <h2 class="copy-small" ng-bind-html="item[1].title | characters : 50"></h2>
+                               <!-- <h3 class="title-small" ng-bind-html="item[1].subtitle | characters : 50"></h3>-->
+
+                                <span class="result-tags subheading">
+                                    <span ng-style="{'color': colors[item[1]['base-type']]}" ng-bind-html="item[1].derivative | searchTags"></span>
+                                </span>
+                            </div>
+                        </div><!--
+                             --><div class="resultImg" ng-style="{'background-image': 'url(\'{{item[1].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div>
+                    </div>
+                </a><!--
+
+                --><a ng-click="item[2].go()" ng-if="item[2]">
+                    <div class="searchResult twoHigh right">
+                        <div class="resultLabel">
+                            <div class="labelCont">
+                                <h2 class="copy-small" ng-bind-html="item[2].title | characters : 50"></h2>
+                               <!-- <h3 class="title-small" ng-bind-html="item[2].subtitle | characters : 50"></h3>-->
+
+                                <span class="result-tags subheading">
+                                    <span ng-style="{'color': colors[item[2]['base-type']]}" ng-bind-html="item[2].derivative | searchTags"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="resultImg" ng-style="{'background-image': 'url(\'{{item[2].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div>
+                    </div>
+                </a><!--
+
+                --><a ng-click="item[6].go()" ng-if="item[6]">
+                    <div class="searchResult twoWide">
+                        <div class="resultImg" ng-style="{'background-image': 'url(\'{{item[6].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div><!--
+                             --><div class="resultLabel">
+                        <div class="labelCont">
+                            <h2 class="copy-small" ng-bind-html="item[6].title | characters : 50"></h2>
+                           <!-- <h3 class="title-small" ng-bind-html="item[6].subtitle | characters : 50"></h3>-->
+
+                            <span class="result-tags subheading">
+                                <span ng-style="{'color': colors[item[6]['base-type']]}" ng-bind-html="item[6].derivative | searchTags"></span>
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+                </a><!--
+
+                --></div><!--
+
+                --><div class="search50Right">
+            <!-- RIGHT COLUMN -->
+
+                <a ng-click="item[3].go()" ng-if="item[3]">
+                    <div class="searchResult twoHighImg left">
+                        <div class="resultImg" ng-style="{'background-image': 'url(\'{{item[3].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div>
+                        <div class="resultLabel">
+                            <div class="labelCont">
+                                <h2 class="copy-small" ng-bind-html="item[3].title | characters : 50"></h2>
+                              <!--  <h3 class="title-small" ng-bind-html="item[3].subtitle | characters : 50"></h3> -->
+
+                                <span class="result-tags subheading">
+                                    <span ng-style="{'color': colors[item[3]['base-type']]}" ng-bind-html="item[3].derivative | searchTags"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a><a ng-click="item[4].go()" ng-if="item[4]">
+                    <div class="searchResult twoWide ">
+                        <div class="resultLabel">
+                            <div class="labelCont">
+                                <h2 class="copy-small" ng-bind-html="item[4].title | characters : 50"></h2>
+                                 <!--   <h3 class="title-small" ng-bind-html="item[4].subtitle | characters : 50"></h3>-->
+
+                                <span class="result-tags subheading">
+                                    <span ng-style="{'color': colors[item[4]['base-type']]}" ng-bind-html="item[4].derivative | searchTags"></span>
+                                </span>
+                            </div>
+                        </div><!--
+
+                        --><div class="resultImg" ng-style="{'background-image': 'url(\'{{item[5].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div>
+                    </div>
+                </a><!--
+
+                --><a ng-click="item[5].go()" ng-if="item[5]">
+                <div class="searchResult twoWide">
+                    <div class="resultImg" ng-style="{'background-image': 'url(\'{{item[5].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div><!--
+                    --><div class="resultLabel">
+
+                            <div class="labelCont">
+                                <h2 class="copy-small" ng-bind-html="item[5].title | characters : 50"></h2>
+                                 <!--   <h3 class="title-small" ng-bind-html="item[5].subtitle | characters : 50"></h3> -->
+
+                                <span class="result-tags subheading">
+                                    <span ng-style="{'color': colors[item[5]['base-type']]}" ng-bind-html="item[5].derivative | searchTags"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a><!--
+
+                --><a ng-click="item[7].go()" ng-if="item[7]">
+                    <div class="searchResult twoWide right">
+                        <div class="resultLabel">
+                            <div class="labelCont">
+                                <h2 class="copy-small" ng-bind-html="item[7].title | characters : 50"></h2>
+                                 <!--   <h3 class="title-small" ng-bind-html="item[7].subtitle | characters : 50"></h3>-->
+
+                                <span class="result-tags subheading">
+                                    <span ng-style="{'color': colors[item[7]['base-type']]}" ng-bind-html="item[7].derivative | searchTags"></span>
+                                </span>
+                            </div>
+                        </div><!--
+
+                        --><div class="resultImg" ng-style="{'background-image': 'url(\'{{item[7].image | asset}}\')'}"><img class="squareFillSearch" src="assets/frontend/images/squareFill.png"></div>
+                    </div>
+                </a><!--
+            --></div><!--
+            --></div><!--
+        --></div>
+    </div>
+</div>

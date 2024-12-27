@@ -1,0 +1,284 @@
+{
+  "overview": [],
+  "data": [
+    {
+      "id": 8430,
+      "published": true,
+      "hidemenu": false,
+      "title": "A bridge to inside outside by medium of electric light.",
+      "client": "Mango Tree House",
+      "intro": "<p>The project site is in suburban area of Bhopal city. Site is nestled in a township with bounty of mango grove. The architecture response poses a sober face to the community housing and opens to a Mango grove with expansive terraces. </p>\n<p>\nOur lighting design approach is to bridge this inside outside relation with medium of electric light. The site offers carefully crafted vistas from this dynamic house and create several lighting scenarios and atmospheres to be displayed, easily thanks to the automation system, as per client needs. </p>\n\n<p>\nAtelier dada planned the master plan for the whole house, but selected only the architectural fittings while the decorative ones were choice of the client and architects. At the trial time, Atelier dada helped with focusing and reorganizing the decorative fittings in the space to respond the best to the design intent. </p>",
+      "location": "Bhopal",
+      "teaser": "Teaser",
+      "background": "/atelierdada/images/project/MTH-LR-23.JPG",
+      "video": "",
+      "search-industries": "Private Residence",
+      "search-expertise": "Brand",
+      "search-studios": "London",
+      "tags": "adidas,Football,Sports,Soccer,UEFA,EURO,Identity,Guidelines,Art Direction,Experience Signatures,Gen Z,Retail,Clothing",
+      "search-tags": {
+        "home-and-lifestyle": "Home & Lifestyle",
+        "brand": "Brand",
+        "london": "London",
+        "adidas": "adidas",
+        "football": "Football",
+        "sports": "Sports",
+        "soccer": "Soccer",
+        "uefa": "UEFA",
+        "euro": "EURO",
+        "identity": "Identity",
+        "guidelines": "Guidelines",
+        "art-direction": "Art Direction",
+        "experience-signatures": "Experience Signatures",
+        "gen-z": "Gen Z",
+        "retail": "Retail",
+        "clothing": "Clothing"
+      },
+      "content": [
+        {
+          "id": 8432,
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "/atelierdada/images/project/MTH-LR-27.jpg"
+          }
+        },
+        {
+          "id": 8433,
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "/atelierdada/images/project/MTH-LR-20.JPG"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8345,
+      "published": true,
+      "hidemenu": false,
+      "title": "Enjoy\nyour breeze!",
+      "client": "Mondeal Square",
+      "intro": "<p>The project is a twin tower of 10 and 12 storey office buildings with a connecting two storey retail area, conceived by the German architects Blocher&Blocher for HN Safal developers in Ahmedabad, India. </p>\n\n<p>\nThe brief from client and architect was to realize technically the idea of the architects to integrate static monochrome lights in the façade. Atelier dada took this idea further ahead with use of media lines that permit more flexibility at use and are more energy efficient with use of subtle programming. </p>\n\n<p>\nThe lights have been custom designed to fit the varying length diagonal lines of the sun shades and been fitted with custom designed press fit mounting clamps in screen box sections. The box sections were customized to keep the LED media bars flush with the profile and thus become totally integral during the day. By night, the light offers unobtrusive views for occupants even while lights are on and became an architectural element defining medium and almost a tangible part of the design.\n\n</p>",
+      "location": "Ahmedabad, India",
+      "teaser": "Enjoy\nyour breeze!",
+      "background": "http://www.appdemo.co.in/atelierdada/images/project/AD2191-Mondeal-sq_scene-21h.jpg",
+      "video": "",
+      "search-industries": "Commercial",
+      "search-expertise": "Environments,Architecture & Implementation",
+      "search-studios": "London,Paris",
+      "tags": "Star Wars,An Art Odyssey,Death Star,Marseille,Le Cafe Pixel,Digital Installation,Exhibition,Interactive",
+      "search-tags": {
+        "charity-and-public-sector": "Charity & Public Sector",
+        "environments": "Environments",
+        "architecture-and-implementation": "Architecture & Implementation",
+        "london": "London",
+        "paris": "Paris",
+        "star-wars": "Star Wars",
+        "an-art-odyssey": "An Art Odyssey",
+        "death-star": "Death Star",
+        "marseille": "Marseille",
+        "le-cafe-pixel": "Le Cafe Pixel",
+        "digital-installation": "Digital Installation",
+        "exhibition": "Exhibition",
+        "interactive": "Interactive"
+      },
+      "content": [
+        {
+          "id": 5881,
+          "template": "full-video",
+          "data": {
+            "Video": "85915432",
+            "VideoAutoplay": ""
+          }
+        },
+        {
+          "id": 8372,
+          "template": "padding",
+          "data": {
+            "Padding": "30"
+          }
+        },
+        {
+          "id": 8373,
+          "template": "crop-1-column-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelierdada/images/project/DSCN5016.jpg"
+          }
+        },
+        {
+          "id": 8371,
+          "template": "padding",
+          "data": {
+            "Padding": "30"
+          }
+        },
+        {
+          "id": 8354,
+          "template": "crop-1-column-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelierdada/images/project/AD2191-Mondeal sq_zoom-dance-du-dimanche.jpg"
+          }
+        },
+        {
+          "id": 8351,
+          "template": "padding",
+          "data": {
+            "Padding": "30"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8296,
+      "published": true,
+      "hidemenu": false,
+      "title": "Commercial animated complex",
+      "client": "Trade Square",
+      "intro": "<p>The project, a commercial complex occupying 3 floors and 2 basements, is situated in the eastern Ahmedabad's old industrial hub Khokhra area, facing to a busy traffic island. The non-stop movement at the traffic island inspired us to express the movement with light. Hence, a dynamic installation immerged as a face of the building with some explorations of connecting the lights with information about time. \n</p>\n<p>\nIn addition, within a very tight budget, corridors linking the shops entries are enhanced with seamless lights integrated into ceiling and light-Art installations using Fluorescence low tech. An attempt is made to give some rhythm and majesty to the long L shaped building, at ground floor guiding toward the housing complex by same owner and architect, through decorative light fittings inspired from torches. </p>",
+      "location": "Ahmedabad,\nIndia",
+      "teaser": "",
+      "background": "http://www.appdemo.co.in/atelierdada/images/project/Trade-square_Neha_14-12-13-6.jpg",
+      "video": "",
+      "search-industries": "Commercial",
+      "search-expertise": "Environments,Architecture & Implementation,Insights & Strategy",
+      "search-studios": "Columbus,New York",
+      "tags": "Lowe's,Retail,Manhattan,Home Improvement,DIY,Chelsea,Upper West Side",
+      "search-tags": {
+        "home-and-lifestyle": "Home & Lifestyle",
+        "environments": "Environments",
+        "architecture-and-implementation": "Architecture & Implementation",
+        "insights-and-strategy": "Insights & Strategy",
+        "columbus": "Columbus",
+        "new-york": "New York",
+        "lowe's": "Lowe's",
+        "retail": "Retail",
+        "manhattan": "Manhattan",
+        "home-improvement": "Home Improvement",
+        "diy": "DIY",
+        "chelsea": "Chelsea",
+        "upper-west-side": "Upper West Side"
+      },
+      "content": [
+        {
+          "id": 8297,
+          "template": "crop-1-column-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelierdada/images/project/Trade-square_Neha_14-12-13-1_1.jpg"
+          }
+        },
+        {
+          "id": 8304,
+          "template": "padding",
+          "data": {
+            "Padding": "30"
+          }
+        },
+        {
+          "id": 5881,
+          "template": "full-video",
+          "data": {
+            "Video": "128737401",
+            "VideoAutoplay": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 1384,
+      "published": true,
+      "hidemenu": false,
+      "title": "Volvo Radiates",
+      "client": "Volvo",
+      "intro": "<p>The very low budget was challenging us to create an elegant concept for this showroom that is efficient, maintenance friendly while branding.\n</p>\n\n<p>\nFor the 100m 2 full glazed façade composing the showroom, located between Porshe and Renault showrooms and signed by the German architects Blocher Blocher, a minimalistic linear concept was imagined, inspired by the purity of Scandinavian design, origin of Volvo brand.</p>\n</p>\n<p>\nLike sunbeams sneaking inside the showroom from the glass façade, the luminous lines guide inward, highlight the cars and components panels on the peripheral walls. From the inside, these lines create a rhythmic that respects the functionality of the premises and manages the networks between what they are recessed. They get reflected on the glazed façade, duplicate and so give an illusion of infinity. They refract on cars' shine, adding a sort of strength and vitality, and creating a unique visual identity to the showroom that attracts from far.\n\n</p><p>\nAbove the reception desk, a decorative suspension with dynamic light, itself a twisted line, focuses the eye on that space and creates a centrality in the showroom. </p>",
+      "location": "Ahmedabad,\nIndia",
+      "teaser": "Rays of light!",
+      "background": "http://www.appdemo.co.in/atelierdada/images/project/volvo-showroom-1.jpg",
+      "video": "",
+      "search-industries": "Commercial – Retail Interior",
+      "search-expertise": "Environments",
+      "search-studios": "Moscow,Paris",
+      "tags": "Toy Store,childrens shop,toys,department store",
+      "search-tags": {
+        "home-and-lifestyle": "Home & Lifestyle",
+        "environments": "Environments",
+        "moscow": "Moscow",
+        "paris": "Paris",
+        "toy-store": "Toy Store",
+        "childrens-shop": "childrens shop",
+        "toys": "toys",
+        "department-store": "department store"
+      },
+      "content": [
+        {
+          "id": 5887,
+          "template": "crop-1-column-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelierdada/images/project/Volvo-showroom_Neha_14 -12-13-8.jpg"
+          }
+        },
+        {
+          "id": 1442,
+          "template": "padding",
+          "data": {
+            "Padding": "30"
+          }
+        },
+        {
+          "id": 1388,
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelierdada/images/project/Volvo-showroom_14- 12-13-5.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1384,
+      "published": true,
+      "hidemenu": false,
+      "title": "Light\nMagic @650",
+      "client": "650\nRestaurant",
+      "intro": "<p>\nClient wanted to have ethnic look for his upcoming restaurant and wanted to use his collection of local artefacts. Our involvement was much at a later stage where several unwanted light points had been already chiselled into beautiful stone work and in wooden ceilings, making lot of unwanted punctures here and there. However, we succeeded in pursuing the client and architect to reduce the number of lights/ locate them discreetly/ lower the source location in room for cosy ambience and utmost visual comfort. We had also helped achieve custom fittings above the dining tables that reveal the wooden ceiling and at the same time act as accent light for the tables. Or concealed lights for accentuating tables and sculptural niches. </p>\n<p>\nFor outdoor stone pavilions also we had suggested buried lights that discreetly accentuate the building while kept low height glowing bollard along the green alleyway to guide softly the client while keeping focus on the illuminated architectural elements.</p>",
+      "location": "Ahmedabad,\nIndia",
+      "teaser": "Light\nMagic",
+      "background": "http://www.appdemo.co.in/atelierdada/images/project/DSC0449.jpg",
+      "video": "",
+      "search-industries": "Hospitality\n- Restaurant",
+      "search-expertise": "Environments",
+      "search-studios": "Moscow,Paris",
+      "tags": "Toy Store,childrens shop,toys,department store",
+      "search-tags": {
+        "home-and-lifestyle": "Home & Lifestyle",
+        "environments": "Environments",
+        "moscow": "Moscow",
+        "paris": "Paris",
+        "toy-store": "Toy Store",
+        "childrens-shop": "childrens shop",
+        "toys": "toys",
+        "department-store": "department store"
+      },
+      "content": [
+        {
+          "id": 5887,
+          "template": "crop-1-column-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelierdada/images/project/_DSC0462.jpg"
+          }
+        },
+        {
+          "id": 1442,
+          "template": "padding",
+          "data": {
+            "Padding": "30"
+          }
+        },
+        {
+          "id": 1388,
+          "template": "full-1-column-background-image",
+          "data": {
+            "OneColumnImage": "http://www.appdemo.co.in/atelierdada/images/project/650-RESTAURANT-AHMEDABAD_2.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}

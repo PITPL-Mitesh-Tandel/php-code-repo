@@ -1,0 +1,26 @@
+<section class="full-height-container minHeight700" ng-class="{'homeContainer': true,'awards_home':item.extra_class}" ng-style="{'background-image': 'url(\'{{item.background.src | asset}}\')'}" ng-click="item.go()">
+    <div class="homeSection fullHome">
+        <div class="textGrad" ng-show="!item.extra_class"></div>
+        <div class="homeArticleText title-stacking">
+            <h2 ng-bind-html="item.subtitle"></h2>
+
+        <span class="copy-regular"><span ng-bind-html="item.title" ng-if="item.title!='Awards'"></span>    </span>
+            <div class="homeSubTitle">
+                <span ng-switch on="item.type">
+                  <div class="copy-regular" ng-switch-when="work"><span ng-bind-html="item.client"></span></div>
+                  <div class="copy-regular" ng-switch-default><span ng-bind-html="item.subtitle"></span></div>
+                </span>
+            </div>
+
+            <div class="subheading" ng-if="item.client || item.subtitle">
+              <!--  <span ng-class="item.getTypeClass()" ng-bind-html="item.sub_type | uppercase"></span> -->
+              <span ng-class="item.getTypeClass()">WORK</span>
+             
+                <span ng-if="item.tags && item.tags[0]">
+                    | <span ng-bind-html="item.tags[0]"></span>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</section>

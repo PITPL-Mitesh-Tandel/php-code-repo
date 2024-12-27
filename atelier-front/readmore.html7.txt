@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angularjs read more example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <style type="text/css">
+         .collapse-text-toggle{
+           font-weight: bold;
+         }
+       </style>
+</head>
+<body>
+
+<div ng-app="mainApp" ng-controller="myController" id="mainController" class="container">
+    <p dd-text-collapse dd-text-collapse-max-length="230" dd-text-collapse-text="{{ longText }}"></p>
+</div>
+
+<script type="text/javascript">
+
+  var app = angular.module("mainApp", []);
+
+  app.controller('myController', function($scope, $timeout) {
+      $scope.longText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+  });
+
+  app.directive('ddTextCollapse', ['$compile', function($compile) {
+
+      return {
+          restrict: 'A',
+          scope: true,
+          link: function(scope, element, attrs) {
+
+              /* start collapsed */
+              scope.collapsed = false;
+
+              /* create the function to toggle the collapse */
+              scope.toggle = function() {
+                  scope.collapsed = !scope.collapsed;
+              };
+
+              /* wait for changes on the text */
+              attrs.$observe('ddTextCollapseText', function(text) {
+
+                  /* get the length from the attributes */
+                  var maxLength = scope.$eval(attrs.ddTextCollapseMaxLength);
+
+                  if (text.length > maxLength) {
+                      /* split the text in two parts, the first always showing */
+                      var firstPart = String(text).substring(0, maxLength);
+                      var secondPart = String(text).substring(maxLength, text.length);
+
+                      /* create some new html elements to hold the separate info */
+                      var firstSpan = $compile('<span>' + firstPart + '</span>')(scope);
+                      var secondSpan = $compile('<span ng-if="collapsed">' + secondPart + '</span>')(scope);
+                      var moreIndicatorSpan = $compile('<span ng-if="!collapsed">... </span>')(scope);
+                      var lineBreak = $compile('<br ng-if="collapsed">')(scope);
+                      var toggleButton = $compile('<span class="collapse-text-toggle" ng-click="toggle()">{{collapsed ? "(less)" : "(more)"}}</span>')(scope);
+
+                      /* remove the current contents of the element
+                       and add the new ones we created */
+                      element.empty();
+                      element.append(firstSpan);
+                      element.append(secondSpan);
+                      element.append(moreIndicatorSpan);
+                      element.append(lineBreak);
+                      element.append(toggleButton);
+                  }
+                  else {
+                      element.empty();
+                      element.append(text);
+                  }
+              });
+          }
+      };
+  }]);
+
+</script>
+
+</body>
+</html>

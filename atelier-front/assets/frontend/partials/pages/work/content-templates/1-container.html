@@ -1,0 +1,20 @@
+<section class="homeContainer full-height-container theOwl">
+     <div class="homeContainer full-height-container" ng-style="{'background-image': 'url(\'{{item.data[0].background | asset}}\')', 'background-position': 'center'}" ng-click="item.data[0].go()">
+            <div class="homeSection fullHome workBanner">
+                <div class="textGrad"></div>
+                <div class="workArticleText title-stacking">
+                    <h1 ng-bind-html="item.data[0].teaser"></h1>
+                    <span class="copy-regular"><span ng-bind-html="item.data[0].title"></span></span>
+                    <div class="subheading">
+                        <span ng-class="item.data[0].getTypeClass()"  ng-if="item.data[0].lang=='en'">WORK</span>
+                        <span ng-class="item.data[0].getTypeClass()"  ng-if="item.data[0].lang=='fr'">Projets</span>
+                         | 
+                        <!-- <span ng-bind-html="item.data[0].category | uppercase"></span> -->
+                        <span ng-if="item.data[0]['work-tags']">
+                            <span ng-bind-html="item.data[0]['work-tags']"></span>
+                        </span>
+                    </div>
+                </div>
+	</div>
+    	</div>
+</section>

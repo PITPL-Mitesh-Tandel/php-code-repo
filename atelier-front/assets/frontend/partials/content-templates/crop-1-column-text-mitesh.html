@@ -1,0 +1,84 @@
+<style>
+	.container {
+		font-size: 16px;
+		line-height: 16px;
+		height: 200px;
+		overflow: hidden;
+		position: relative;
+	}
+	.show {
+		overflow: visible;
+		height: auto;
+		-webkit-transition: all linear 0.2s;
+		transition: all linear 0.2s;
+	}
+	.hide {
+		display: none;
+	}
+	.btn {
+		border: none;
+		color: #ef7627;
+		background: none;
+		font-size: 16px;
+		font-family: 'Libre Baskerville', "Times New Roman", Times, serif;
+		padding: 5px 20px;
+	}
+
+	.show-more-end {
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+		background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#000000ff', EndColorStr='#000000');
+		bottom: 0;
+		height: 30px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+	.content-block {
+		margin-bottom: 10px;
+	}
+	.textCenter {
+		margin-bottom: 50px;
+	}
+</style>
+<div class="container" ng-class="{show:contentToggle}">
+	<div class="content-block text--copy" ng-bind-html="item.data.OneColumnText"></div>
+	<div class="show-more-end" ng-class="{hide:contentToggle}"></div>
+</div>
+<div class="textCenter"><button class="btn" ng-click="contentToggle = !contentToggle">{{contentToggle && 'Know Less' || 'Know More'}}</button></div>
+
+	<!--<style>
+		a {
+			cursor: pointer;
+		}
+
+		.more-show-hide {
+			-webkit-transition: all linear 0.2s;
+			transition: all linear 0.2s;
+		}
+
+		.more-show-hide.ng-hide {
+			opacity: 0;
+		}
+
+		.toggle-dots-grey {
+			color: darkgrey;
+		}
+
+		.toggle-dots-yellow {
+			color: yellow;
+		}
+
+		.toggle-link-yellow {
+			color: yellow;
+		}
+
+		.toggle-link-grey {
+			color: darkgrey;
+		}
+	</style>
+<div class="content-block text&#45;&#45;copy" hm-read-more hm-text="{{item.data.OneColumnText}}" hm-limit="800" hm-more-text="Know more" hm-less-text="Know less" hm-dots-class="{{dotsClass}}" hm-link-class="{{linkClass}}"></div>-->

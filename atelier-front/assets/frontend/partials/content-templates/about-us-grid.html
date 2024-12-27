@@ -1,0 +1,29 @@
+<div class="about-us-grid">
+    <div class="about-us-grid-row cf">
+        <div class="background-cover-center" ng-style="item.data.Image1.length && {'background-image': 'url(\'{{item.data.Image1 | asset}}\')'}">
+            <div class="about-us-grid-padder"></div>
+            <h4 ng-bind="item.data.Title1" class="about-us-grid-title"></h4>
+            <span ng-bind="item.data.Text1" class="about-us-grid-description copy-reduced"></span>
+        </div>
+
+        <div class="background-cover-center" ng-style="item.data.Image2.length && {'background-image': 'url(\'{{item.data.Image2 | asset}}\')'}">
+            <div class="about-us-grid-padder"></div>
+            <h4 ng-bind="item.data.Title2" class="about-us-grid-title"></h4>
+            <span ng-bind="item.data.Text2" class="about-us-grid-description copy-reduced"></span>
+        </div>
+    </div>
+
+    <div class="about-us-grid-row cf">
+        <div class="background-cover-center" ng-style="item.data.Image3.length && {'background-image': 'url(\'{{item.data.Image3 | asset}}\')'}">
+            <div class="about-us-grid-padder"></div>
+            <h4 ng-bind="item.data.Title3" class="about-us-grid-title"></h4>
+            <span ng-bind="item.data.Text3" class="about-us-grid-description copy-reduced"></span>
+        </div>
+
+        <div class="background-cover-center" ng-style="item.data.Image4.length && {'background-image': 'url(\'{{item.data.Image4 | asset}}\')'}">
+            <div class="about-us-grid-padder"></div>
+            <h4 ng-bind="item.data.Title4" class="about-us-grid-title"></h4>
+            <span ng-bind="item.data.Text4" class="about-us-grid-description copy-reduced"></span>
+        </div>
+    </div>
+</div>

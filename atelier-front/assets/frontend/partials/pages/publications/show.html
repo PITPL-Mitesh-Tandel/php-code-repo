@@ -1,0 +1,36 @@
+<div class="news-article scroll-container">
+    <div class="cf article-holder">
+        <img class="news-article-image" ng-src="{{pc.publications.background}}" iu-image-element />
+
+        <div class="news-article-body news-details-container">
+            <h2 class="news-article-title">
+                {{pc.publications.title}}
+            </h2>
+
+            <div class="news-article-date">{{ pc.publications.date | ordinalDate: 'dd/MM/yyyy' }}</div>
+
+            <div class="news-article-category">
+                <span ng-style="{color: '#FFDF00'}">{{ pc.publications.category }}</span>
+                <span ng-if="pc.publications.location.length">
+                    | {{pc.publications.location}}
+                </span>
+            </div>
+
+            <span ng-bind-html="pc.publications.content" class="news-article-content"></span>
+
+            <img ng-src="{{pc.publications.logo}}" class="news-article-logo" iu-image-element />
+
+            <div class="news-article-external-link copy-reduced" ng-if="pc.publications.link.length && ['http://', 'https://'].indexOf(pc.publications.link) === -1">
+                <img src="assets/frontend/images/newsArticle.png">
+                <a href="{{pc.news.link}}" target="_blank" ng-style="{'text-decoration-color': '{{colors.publications}}'}">
+                    {{pc.publications.link}}
+                </a>
+            </div>
+        </div>
+        <div class="more-news">
+                <a ui-sref="pages-publications({lang: language})"" class="news-article-see-more">
+                    <img src="assets/frontend/images/more-publications.png" alt="">
+                </a>
+      </div>
+    </div>
+</div>

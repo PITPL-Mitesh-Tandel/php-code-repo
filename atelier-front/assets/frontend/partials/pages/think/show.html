@@ -1,0 +1,56 @@
+<div class="video-background" ng-if="think">
+    <video class="video-background--video" autoplay="autoplay" ng-if="think.video.length > 0" muted muted="muted" loop="loop">
+        <source src="{{think.video | trustUrl}}" type="video/mp4">
+    </video>
+</div>
+
+<div class="scroll-container show-image-background think-details-container" ng-if="think" background-image="{{ think.background | asset }}" ng-class="{'show-image-background--hidden': think.video.length > 0}">
+    <div class="show-header">
+        <video class="show-header__inline" autoplay="autoplay" ng-if="think.video.length > 0" muted muted="muted" loop="loop">
+            <source src="{{think.video | trustUrl}}" type="video/mp4">
+        </video>
+
+        <img class="show-header__inline show-header__inline--image" ng-if="think.video.length < 1" ng-src="{{think.background | asset}}" />
+
+        <div class="show-header__content">
+            <h2 ng-bind-html="think.title"></h2>
+            <span class="show-header__subtitle copy-regular" ng-bind-html="think.categories"></span>
+
+            <div class="show-header__links show-header__links--think">
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{think.permalink}}" target="_blank">
+                    <img src="assets/frontend/images/facebook_inv.svg" />
+                </a>
+
+                <a href="https://twitter.com/share?text=@fitchdesign&url={{think.permalink}}" target="_blank">
+                    <img src="assets/frontend/images/twitter_inv.svg" />
+                </a>
+
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source={{think.permalink}}" target="_blank">
+                    <img src="assets/frontend/images/linkedin_inv.svg" />
+                </a>
+
+                <a href="https://plus.google.com/share?url={{think.permalink}}" target="_blank">
+                    <img src="assets/frontend/images/gplus_inv.svg" />
+                </a>
+
+                <a href="/contact">
+                    <img src="assets/frontend/images/env_inv.svg" />
+                </a>
+            </div>
+
+            <div class="show-header__text copy-regular" ng-bind-html="think.teaser"></div>
+        </div>
+    </div>
+
+    <div class="show-content">
+        <template-item ng-repeat="item in think.content" item="item"></template-item>
+
+        <related-links></related-links>
+
+        <page-footer studios="studios">
+            <map>
+                <map-city ng-repeat="studio in studios" name="studio.title" latitude="studio.latitude" longitude="studio.longitude"></map-city>
+            </map>
+        </page-footer>
+    </div>
+</div>

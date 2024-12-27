@@ -1,0 +1,55 @@
+<section class="full-height-container minHeight700" ng-class="{'homeContainer': true}" ng-style="{'background-image': 'url(\'{{item.image | asset}}\')'}" ng-click="item.go()" >
+    <div class="homeSection fullHome  minHeight700">
+        <div class="textGrad"></div>
+        <div class="homeArticleText title-stacking">
+           
+            <h1  ng-bind-html="item.title" style="margin-bottom:0px;"></h1>
+            <div class="homeSubTitle animatedtitle" ng-if="item.subtitle">
+                <div class="copy-regular teasersubtitle"><span ng-bind-html="item.subtitle"></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+
+@media all and (min-width:1024px) 
+{
+    /*
+    .animatedtitle
+    {
+        background: #FFF -webkit-gradient(linear, left top, right top, from(#FFF), to(#FFF), color-stop(0.5, #222)) 0 0 no-repeat;
+        -webkit-background-size: 50px;
+        
+        color: rgba(255, 255, 255, 0.1);
+        -webkit-background-clip: text;
+        
+        -webkit-animation-name: shine;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes shine
+    {
+        0%
+        {
+            background-position: top left;
+        }
+        100%
+        {
+            background-position: top right;
+        }
+    }
+    */
+
+}
+
+.teasersubtitle
+{
+     font-family: "EB Garamond",serif;
+   /* font-size: 40px;*/
+    font-weight:100;
+    letter-spacing: 0;
+    line-height: 1.5;
+    
+}
+</style>
