@@ -75,7 +75,7 @@
         <label for="amount">Amount (INR)</label>
         <input type="number" id="amount" name="amount" min="1" required>
 
-        <div id="pan_field" style="display: none;">
+        <div id="pan_field">
             <label for="pan_number">PAN</label>
             <input type="text" maxlength="10" id="pan_number" name="pan_number" min="10">
         </div>
@@ -84,14 +84,6 @@
     </form>
 
     <script>
-        document.getElementById('amount').addEventListener('keyup', function() {
-            const amount = document.getElementById('amount').value;
-            if (amount > 2000) {
-                document.getElementById('pan_field').style.display = 'block';
-            } else {
-                document.getElementById('pan_field').style.display = 'none';
-            }
-        });
         document.getElementById('donateButton').addEventListener('click', function() {
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
@@ -110,7 +102,7 @@
             }
 
             const options = {
-                key: "rzp_test_EDtzyo4i6PUUsA", // Replace with your Razorpay Key ID
+                key: "rzp_live_rOnixpfzAldfGv", // Replace with your Razorpay Key ID
                 amount: amount * 100, // Convert amount to paise
                 currency: "INR",
                 name: "Donation",
