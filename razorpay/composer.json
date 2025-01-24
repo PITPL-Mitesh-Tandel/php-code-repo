@@ -1,0 +1,23 @@
+{
+	"name": "pseudcode/various-scripts",
+    "description": "Various scripts for different functions for Pseudocode",
+    "license": "GPU",
+    "keywords": ["Pseudocode", "Various", "Scripts"],
+    "authors": [
+        {
+            "name": "Mitesh Tandel"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "Lib/helpers.php"
+        ],
+        "psr-4": {
+            "Pseudocode\\VariousScripts\\": "."
+        }
+    },
+    "require": {
+		"vlucas/phpdotenv": "^5.5",
+		"razorpay/razorpay": "2.*"
+	}
+}
