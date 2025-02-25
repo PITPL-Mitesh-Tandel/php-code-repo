@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_URI} .php$
-RewriteRule ^(.*).php$ /$1.htm [R=301,L]
