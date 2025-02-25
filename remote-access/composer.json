@@ -1,0 +1,23 @@
+{
+	"name": "tapverse/multiverse-cms-sync",
+    "description": "Multiverse CMS structure sync framework",
+    "license": "GPU",
+    "keywords": ["Multiverse CMS", "Structure", "Sync", "Framework"],
+    "authors": [
+        {
+            "name": "Mitesh Tandel"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "Lib/helpers.php"
+        ],
+        "psr-4": {
+            "Tapverse\\MultiverseCMSSync\\": "."
+        }
+    },
+    "require": {
+		"vlucas/phpdotenv": "^5.5",
+		"guzzlehttp/guzzle": "^7.8"
+	}
+}
