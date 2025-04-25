@@ -252,7 +252,10 @@ $(document).ready(function () {
 
 $(".event-slider").slick({
     centerMode: true,
-    slidesToShow: 3,
+    slidesToShow: 2.333,
+    slidesToScroll: 1,
+    centerMode: true,
+    infinite: true,
     responsive: [
         {
             breakpoint: 768,
