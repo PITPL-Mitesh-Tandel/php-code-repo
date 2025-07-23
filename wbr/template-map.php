@@ -16,7 +16,7 @@ get_header();
         <div class="banner-blue-opacity"></div>
     </div>
 </section>
-<section class="simple-layout deal-and-special-section text-center section-padding pb-3">
+<section class="simple-layout deal-and-special-section text-center py-2">
     <div id="mapWidget"></div>
 </section>
 <script src="<?php echo get_bloginfo('stylesheet_directory') ?>/js/wbr-map.min.js"></script>
