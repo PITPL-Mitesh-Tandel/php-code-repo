@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://codemirror.net/5/demo/preview.html -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CodeMirror: HTML5 preview</title>
+
+  <link rel="stylesheet" href="./docs.css">
+
+  <link rel="stylesheet" href="./codemirror.css">
+  <script src="./codemirror.js"></script>
+  <script src="./xml.js"></script>
+  <script src="./javascript.js"></script>
+  <script src="./css.js"></script>
+  <script src="./htmlmixed.js"></script>
+  <style type="text/css">
+    .CodeMirror {
+      float: left;
+      width: 50%;
+      border: 1px solid black;
+      height: calc(90vh);
+    }
+
+    iframe {
+      width: 49%;
+      float: left;
+      height: calc(90vh);
+      border: 1px solid black;
+      border-left: 0px;
+    }
+  </style>
+  <style id="chromane_style">
+    body.chromane_rec_nofollow_link_highlighting_enabled a[rel*="nofollow"] {
+      margin-right: 8px;
+      margin-left: 8px;
+      outline: 2px dotted black !important;
+      outline-offset: 2px !important;
+    }
+
+    body.chromane_rec_sponsored_link_highlighting_enabled a[rel*="sponsored"] {
+      margin-right: 8px;
+      margin-left: 8px;
+      outline: 2px dotted black !important;
+      outline-color: black;
+      outline-offset: 2px !important;
+    }
+
+    body.chromane_rec_ugc_link_highlighting_enabled a[rel*="ugc"] {
+      margin-right: 8px;
+      margin-left: 8px;
+      outline: 2px dotted black !important;
+      outline-offset: 2px !important;
+    }
+  </style>
+</head>
+
+<body class="">
+  <article>
+    <h2>HTML5 preview</h2>
+
+    <textarea id="code" name="code" style="display: none;">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=utf-8&gt;
+    &lt;title&gt;HTML5 canvas demo&lt;/title&gt;
+    &lt;style&gt;p {font-family: monospace;}&lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Canvas pane goes here:&lt;/p&gt;
+    &lt;canvas id=pane width=300 height=200&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+      var canvas = document.getElementById('pane');
+      var context = canvas.getContext('2d');
+
+      context.fillStyle = 'rgb(250,0,0)';
+      context.fillRect(10, 10, 55, 50);
+
+      context.fillStyle = 'rgba(0, 0, 250, 0.5)';
+      context.fillRect(30, 30, 55, 50);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+    <iframe id="preview"></iframe>
+    <script>
+      var delay;
+      // Initialize CodeMirror editor with a nice html5 canvas demo.
+      var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+        mode: 'application/x-httpd-php',
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "application/x-httpd-php",
+        indentUnit: 4,
+        indentWithTabs: true
+      });
+      editor.on("change", function () {
+        clearTimeout(delay);
+        delay = setTimeout(updatePreview, 300);
+      });
+
+      function updatePreview() {
+        var previewFrame = document.getElementById('preview');
+        var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+        preview.open();
+        preview.write(editor.getValue());
+        preview.close();
+      }
+      setTimeout(updatePreview, 300);
+    </script>
+  </article>
+</body>
+
+</html>
